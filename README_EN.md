@@ -40,12 +40,10 @@ We provide TensorFlow models at the moment.
 * **`ELECTRA-base, Chinese`**：12-layer, 768-hidden, 12-heads, 102M parameters   
 * **`ELECTRA-small, Chinese`**: 12-layer, 256-hidden, 4-heads, 12M parameters
 
-**We are uploading our models, and will be available very soon.**
-
 | Model | Data | Google Drive | iFLYTEK Cloud | Size |
 | :------- | :--------- | :---------: | :---------: | :---------: | 
-| **`ELECTRA-base, Chinese`** | Wikipedia+Extended data | [❎TensorFlow] | [❎TensorFlow] | 383M |
-| **`ELECTRA-small, Chinese`** | Wikipedia+Extended data | [❎TensorFlow] | [❎TensorFlow] | 46M |
+| **`ELECTRA-base, Chinese`** | Wikipedia+Extended data | [TensorFlow](https://drive.google.com/open?id=1FMwrs2weFST-iAuZH3umMa6YZVeIP8wD) | [TensorFlow（pw:3VQu)](https://pan.iflytek.com:443/link/43B111080BD4A2D3370423912B45491E) | 383M |
+| **`ELECTRA-small, Chinese`** | Wikipedia+Extended data | [TensorFlow](https://drive.google.com/open?id=1uab-9T1kR9HgD2NB0Kz1JB_TdSKgJIds) | [TensorFlow（pw:wm2E)](https://pan.iflytek.com:443/link/E5B4E8FE8B22A5FF03184D34CB2F1767) | 46M |
 
 The users from Mainland China are encouraged to use iFLYTEK Cloud download links, and the others may use Google Drive links.
 The ZIP package includes the following files (For example, `ELECTRA-small, Chinese`):

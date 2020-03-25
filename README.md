@@ -50,12 +50,11 @@
 * **`ELECTRA-base, Chinese`**：12-layer, 768-hidden, 12-heads, 102M parameters   
 * **`ELECTRA-small, Chinese`**: 12-layer, 256-hidden, 4-heads, 12M parameters
 
-**模型正在上传中，感谢您的耐心等待。**
 
 | 模型简称 | 语料 | Google下载 | 讯飞云下载 | 压缩包大小 |
 | :------- | :--------- | :---------: | :---------: | :---------: | 
-| **`ELECTRA-base, Chinese`** | 中文维基+通用数据 | [❎TensorFlow] | [❎TensorFlow] | 383M |
-| **`ELECTRA-small, Chinese`** | 中文维基+通用数据 | [❎TensorFlow] | [❎TensorFlow] | 46M |
+| **`ELECTRA-base, Chinese`** | 中文维基+通用数据 | [TensorFlow](https://drive.google.com/open?id=1FMwrs2weFST-iAuZH3umMa6YZVeIP8wD) | [TensorFlow（密码3VQu）](https://pan.iflytek.com:443/link/43B111080BD4A2D3370423912B45491E) | 383M |
+| **`ELECTRA-small, Chinese`** | 中文维基+通用数据 | [TensorFlow](https://drive.google.com/open?id=1uab-9T1kR9HgD2NB0Kz1JB_TdSKgJIds) | [TensorFlow（密码wm2E）](https://pan.iflytek.com:443/link/E5B4E8FE8B22A5FF03184D34CB2F1767) | 46M |
 
 中国大陆境内建议使用讯飞云下载点，境外用户建议使用谷歌下载点。 
 以TensorFlow版`ELECTRA-small, Chinese`为例，下载完毕后对zip文件进行解压得到：
