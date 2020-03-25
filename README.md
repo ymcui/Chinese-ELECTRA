@@ -69,8 +69,8 @@ chinese_electra_small_L-12_H-256_A-4.zip
 
 ### 训练细节
 我们采用了大规模中文维基以及通用文本训练了ELECTRA模型，总token数达到5.4B，与[RoBERTa-wwm-ext系列模型](https://github.com/ymcui/Chinese-BERT-wwm)一致。词表方面沿用了谷歌原版BERT的WordPiece词表，包含21128个token。其他细节和超参数如下（未提及的参数保持默认）：
-- `ELECTRA-small`: 12层，隐层768，12个注意力头，学习率5e-4，batch1024，最大长度512，训练1M步
-- `ELECTRA-base`: 12层，隐层256，4个注意力头，学习率2e-4，batch256，最大长度512，训练1M步
+- `ELECTRA-base`: 12层，隐层768，12个注意力头，学习率2e-4，batch256，最大长度512，训练1M步
+- `ELECTRA-small`: 12层，隐层256，4个注意力头，学习率5e-4，batch1024，最大长度512，训练1M步
 
 
 ## 基线系统效果

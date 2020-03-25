@@ -60,8 +60,8 @@ chinese_electra_small_L-12_H-256_A-4.zip
 We use the same data for training [RoBERTa-wwm-ext model series](https://github.com/ymcui/Chinese-BERT-wwm), which includes 5.4B tokens.
 We also use the same vocabulary from Chinese BERT, which has 21128 tokens.
 Other details and hyperparameter settings are listed below (others are remain default):
-- `ELECTRA-small`: 12-layers, 768-hidden, 12-heads, lr: 5e-4, batch: 1024, max_len: 512, 1M steps
-- `ELECTRA-base`: 12-layers, 256-hidden, 4-heads, lr: 2e-4, batch: 256, max_len: 512, 1M steps
+- `ELECTRA-base`: 12-layers, 768-hidden, 12-heads, lr: 2e-4, batch: 256, max_len: 512, 1M steps
+- `ELECTRA-small`: 12-layers, 256-hidden, 4-heads, lr: 5e-4, batch: 1024, max_len: 512, 1M steps
 
 
 ## Baselines
