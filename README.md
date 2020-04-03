@@ -19,8 +19,9 @@
 
 
 ## 新闻
-2020/3/25 Chinese ELECTRA-small/base已发布，请查看[模型下载](#模型下载)
+2020/3/31 本目录发布的模型已接入[飞桨PaddleHub](https://github.com/PaddlePaddle/PaddleHub)，查看[快速加载](#快速加载)
 
+2020/3/25 Chinese ELECTRA-small/base已发布，请查看[模型下载](#模型下载)
 
 ## 内容导引
 | 章节 | 描述 |
@@ -67,6 +68,20 @@ chinese_electra_small_L-12_H-256_A-4.zip
     |- vocab.txt            	            # 词表
 ```
 
+### 快速加载
+依托[PaddleHub](https://github.com/PaddlePaddle/PaddleHub)，我们只需一行代码即可完成模型下载安装，十余行代码即可完成文本分类、序列标注、阅读理解等任务。
+
+```
+import paddlehub as hub
+module = hub.Module(name=MODULE_NAME)
+```
+
+其中`MODULE_NAME`对应列表如下：
+
+| 模型名 | MODULE_NAME |
+| - | - |
+| ELECTRA-base | [chinese-electra-base](https://paddlepaddle.org.cn/hubdetail?name=chinese-electra-base&en_category=SemanticModel) |
+| ELECTRA-small  | [chinese-electra-small](https://paddlepaddle.org.cn/hubdetail?name=chinese-electra-small&en_category=SemanticModel) |
 
 ### 训练细节
 我们采用了大规模中文维基以及通用文本训练了ELECTRA模型，总token数达到5.4B，与[RoBERTa-wwm-ext系列模型](https://github.com/ymcui/Chinese-BERT-wwm)一致。词表方面沿用了谷歌原版BERT的WordPiece词表，包含21128个token。其他细节和超参数如下（未提及的参数保持默认）：

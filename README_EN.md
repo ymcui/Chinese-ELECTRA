@@ -9,6 +9,8 @@ This project is based on the official code of ELECTRA: [https://github.com/googl
 
 
 ## News
+March 31, 2020  The models in this repository now can be easily accessed through [PaddleHub](https://github.com/PaddlePaddle/PaddleHub), check [Quick Load](#Quick-Load)
+
 March 25, 2020  We have released Chinese ELECTRA-small/base models, check [Download](#Download).
 
 
@@ -55,6 +57,21 @@ chinese_electra_small_L-12_H-256_A-4.zip
     |- electra_small.index                  # Index info
     |- vocab.txt                            # Vocabulary
 ```
+
+### Quick Load
+With [PaddleHub](https://github.com/PaddlePaddle/PaddleHub), we can download and install the model with one line of code.
+
+```
+import paddlehub as hub
+module = hub.Module(name=MODULE_NAME)
+```
+
+The actual model and its `MODULE_NAME` are listed below.
+
+| Original Model| MODULE_NAME |
+| - | - |
+| ELECTRA-base | [chinese-electra-base](https://paddlepaddle.org.cn/hubdetail?name=chinese-electra-base&en_category=SemanticModel) |
+| ELECTRA-small  | [chinese-electra-small](https://paddlepaddle.org.cn/hubdetail?name=chinese-electra-small&en_category=SemanticModel) |
 
 ### Training Details
 We use the same data for training [RoBERTa-wwm-ext model series](https://github.com/ymcui/Chinese-BERT-wwm), which includes 5.4B tokens.
