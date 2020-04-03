@@ -28,6 +28,7 @@
 |-|-|
 | [简介](#简介) | 介绍ELECTRA基本原理 |
 | [模型下载](#模型下载) | 中文ELECTRA预训练模型下载 |
+| [快速加载](#快速加载) | 介绍了如何使用[🤗Transformers](https://github.com/huggingface/transformers)、[PaddleHub](https://github.com/PaddlePaddle/PaddleHub)快速加载模型 |
 | [基线系统效果](#基线系统效果) | 中文基线系统效果：阅读理解、文本分类等 |
 | [使用方法](#使用方法) | 模型的详细使用方法 |
 | [FAQ](#FAQ) | 常见问题答疑 |
@@ -68,7 +69,32 @@ chinese_electra_small_L-12_H-256_A-4.zip
     |- vocab.txt                            # 词表
 ```
 
-### 快速加载
+### 训练细节
+我们采用了大规模中文维基以及通用文本训练了ELECTRA模型，总token数达到5.4B，与[RoBERTa-wwm-ext系列模型](https://github.com/ymcui/Chinese-BERT-wwm)一致。词表方面沿用了谷歌原版BERT的WordPiece词表，包含21128个token。其他细节和超参数如下（未提及的参数保持默认）：
+- `ELECTRA-base`: 12层，隐层768，12个注意力头，学习率2e-4，batch256，最大长度512，训练1M步
+- `ELECTRA-small`: 12层，隐层256，4个注意力头，学习率5e-4，batch1024，最大长度512，训练1M步
+
+
+## 快速加载
+### 使用Huggingface-Transformers（BETA）
+
+**注意：目前Huggingface-Transformers对ELECTRA的支持仍处于beta状态，建议等待正式发布后再通过下述方式调用。**
+
+依托于[Huggingface-Transformers](https://github.com/huggingface/transformers)，可轻松调用中文ELECTRA模型。
+```python
+tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
+model = AutoModel.from_pretrained(MODEL_NAME) 
+```
+
+其中`MODEL_NAME`对应列表如下：
+
+| 模型名 | 组件 | MODEL_NAME |
+| - | - | - | 
+| ELECTRA-base, Chinese | discriminator | hfl/chinese-electra-base-discriminator |
+| ELECTRA-small, Chinese | discriminator | hfl/chinese-electra-small-discriminator |
+
+
+### 使用PaddleHub
 依托[PaddleHub](https://github.com/PaddlePaddle/PaddleHub)，我们只需一行代码即可完成模型下载安装，十余行代码即可完成文本分类、序列标注、阅读理解等任务。
 
 ```
@@ -80,13 +106,8 @@ module = hub.Module(name=MODULE_NAME)
 
 | 模型名 | MODULE_NAME |
 | - | - |
-| ELECTRA-base | [chinese-electra-base](https://paddlepaddle.org.cn/hubdetail?name=chinese-electra-base&en_category=SemanticModel) |
-| ELECTRA-small  | [chinese-electra-small](https://paddlepaddle.org.cn/hubdetail?name=chinese-electra-small&en_category=SemanticModel) |
-
-### 训练细节
-我们采用了大规模中文维基以及通用文本训练了ELECTRA模型，总token数达到5.4B，与[RoBERTa-wwm-ext系列模型](https://github.com/ymcui/Chinese-BERT-wwm)一致。词表方面沿用了谷歌原版BERT的WordPiece词表，包含21128个token。其他细节和超参数如下（未提及的参数保持默认）：
-- `ELECTRA-base`: 12层，隐层768，12个注意力头，学习率2e-4，batch256，最大长度512，训练1M步
-- `ELECTRA-small`: 12层，隐层256，4个注意力头，学习率5e-4，batch1024，最大长度512，训练1M步
+| ELECTRA-base, Chinese | [chinese-electra-base](https://paddlepaddle.org.cn/hubdetail?name=chinese-electra-base&en_category=SemanticModel) |
+| ELECTRA-small, Chinese  | [chinese-electra-small](https://paddlepaddle.org.cn/hubdetail?name=chinese-electra-small&en_category=SemanticModel) |
 
 
 ## 基线系统效果

@@ -19,6 +19,7 @@ March 25, 2020  We have released Chinese ELECTRA-small/base models, check [Downl
 |-|-|
 | [Introduction](#Introduction) | Introduction to the ELECTRA |
 | [Download](#Download) | Download links for Chinese ELECTRA models |
+| [Quick Load](#Quick-Load) | Learn how to quickly load our models through [🤗Transformers](https://github.com/huggingface/transformers) or [PaddleHub](https://github.com/PaddlePaddle/PaddleHub) |
 | [Baselines](#Baselines) | Baseline results on MRC, Text Classification, etc. |
 | [Usage](#Usage) | Detailed instructions on how to use ELECTRA |
 | [FAQ](#FAQ) | Frequently Asked Questions |
@@ -58,7 +59,34 @@ chinese_electra_small_L-12_H-256_A-4.zip
     |- vocab.txt                            # Vocabulary
 ```
 
-### Quick Load
+### Training Details
+We use the same data for training [RoBERTa-wwm-ext model series](https://github.com/ymcui/Chinese-BERT-wwm), which includes 5.4B tokens.
+We also use the same vocabulary from Chinese BERT, which has 21128 tokens.
+Other details and hyperparameter settings are listed below (others are remain default):
+- `ELECTRA-base`: 12-layers, 768-hidden, 12-heads, lr: 2e-4, batch: 256, max_len: 512, 1M steps
+- `ELECTRA-small`: 12-layers, 256-hidden, 4-heads, lr: 5e-4, batch: 1024, max_len: 512, 1M steps
+
+
+## Quick Load
+### Huggingface-Transformers (BETA)
+
+**Note: ELECTRA support for Huggingface-Transoformers is still in its beta phase, and we suggest you check back when it is officially released.**
+
+With [Huggingface-Transformers](https://github.com/huggingface/transformers), the models in this repository could be easily accessed and loaded through the following codes.
+```python
+tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
+model = AutoModel.from_pretrained(MODEL_NAME) 
+```
+
+The actual model and its `MODEL_NAME` are listed below.
+
+| Original Model | Component | MODEL_NAME |
+| - | - | - |
+| ELECTRA-base, Chinese | discriminator | hfl/chinese-electra-base-discriminator |
+| ELECTRA-small, Chinese | discriminator | hfl/chinese-electra-small-discriminator |
+
+
+### PaddleHub
 With [PaddleHub](https://github.com/PaddlePaddle/PaddleHub), we can download and install the model with one line of code.
 
 ```
@@ -72,13 +100,6 @@ The actual model and its `MODULE_NAME` are listed below.
 | - | - |
 | ELECTRA-base | [chinese-electra-base](https://paddlepaddle.org.cn/hubdetail?name=chinese-electra-base&en_category=SemanticModel) |
 | ELECTRA-small  | [chinese-electra-small](https://paddlepaddle.org.cn/hubdetail?name=chinese-electra-small&en_category=SemanticModel) |
-
-### Training Details
-We use the same data for training [RoBERTa-wwm-ext model series](https://github.com/ymcui/Chinese-BERT-wwm), which includes 5.4B tokens.
-We also use the same vocabulary from Chinese BERT, which has 21128 tokens.
-Other details and hyperparameter settings are listed below (others are remain default):
-- `ELECTRA-base`: 12-layers, 768-hidden, 12-heads, lr: 2e-4, batch: 256, max_len: 512, 1M steps
-- `ELECTRA-small`: 12-layers, 256-hidden, 4-heads, lr: 5e-4, batch: 1024, max_len: 512, 1M steps
 
 
 ## Baselines
