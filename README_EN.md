@@ -9,6 +9,8 @@ This project is based on the official code of ELECTRA: [https://github.com/googl
 
 
 ## News
+April 7, 2020 PyTorch models are available through [🤗Transformers](https://github.com/huggingface/transformers), check [Quick Load](#Quick-Load)
+
 March 31, 2020  The models in this repository now can be easily accessed through [PaddleHub](https://github.com/PaddlePaddle/PaddleHub), check [Quick Load](#Quick-Load)
 
 March 25, 2020  We have released Chinese ELECTRA-small/base models, check [Download](#Download).
@@ -45,8 +47,8 @@ We provide TensorFlow models at the moment.
 
 | Model | Data | Google Drive | iFLYTEK Cloud | Size |
 | :------- | :--------- | :---------: | :---------: | :---------: | 
-| **`ELECTRA-base, Chinese`** | Wikipedia+Extended data | [TensorFlow](https://drive.google.com/open?id=1FMwrs2weFST-iAuZH3umMa6YZVeIP8wD) | [TensorFlow（pw:3VQu)](https://pan.iflytek.com:443/link/43B111080BD4A2D3370423912B45491E) | 383M |
-| **`ELECTRA-small, Chinese`** | Wikipedia+Extended data | [TensorFlow](https://drive.google.com/open?id=1uab-9T1kR9HgD2NB0Kz1JB_TdSKgJIds) | [TensorFlow（pw:wm2E)](https://pan.iflytek.com:443/link/E5B4E8FE8B22A5FF03184D34CB2F1767) | 46M |
+| **`ELECTRA-base, Chinese`** | Wikipedia+Extended data | [TensorFlow](https://drive.google.com/open?id=1FMwrs2weFST-iAuZH3umMa6YZVeIP8wD) <br/> [PyTorch]()  | [TensorFlow（pw:3VQu)](https://pan.iflytek.com:443/link/43B111080BD4A2D3370423912B45491E) <br/> [PyTorch]()  | 383M |
+| **`ELECTRA-small, Chinese`** | Wikipedia+Extended data | [TensorFlow](https://drive.google.com/open?id=1uab-9T1kR9HgD2NB0Kz1JB_TdSKgJIds) <br/> [PyTorch]()  | [TensorFlow（pw:wm2E)](https://pan.iflytek.com:443/link/E5B4E8FE8B22A5FF03184D34CB2F1767) <br/> [PyTorch]()  | 46M |
 
 The users from Mainland China are encouraged to use iFLYTEK Cloud download links, and the others may use Google Drive links.
 The ZIP package includes the following files (For example, `ELECTRA-small, Chinese`):
@@ -68,11 +70,9 @@ Other details and hyperparameter settings are listed below (others are remain de
 
 
 ## Quick Load
-### Huggingface-Transformers (BETA)
+### Huggingface-Transformers
 
-**Note: ELECTRA support for Huggingface-Transoformers is still in its beta phase, and we suggest you check back when it is officially released.**
-
-With [Huggingface-Transformers](https://github.com/huggingface/transformers), the models in this repository could be easily accessed and loaded through the following codes.
+With [Huggingface-Transformers 2.8.0](https://github.com/huggingface/transformers), the models in this repository could be easily accessed and loaded through the following codes.
 ```python
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 model = AutoModel.from_pretrained(MODEL_NAME) 
@@ -83,7 +83,9 @@ The actual model and its `MODEL_NAME` are listed below.
 | Original Model | Component | MODEL_NAME |
 | - | - | - |
 | ELECTRA-base, Chinese | discriminator | hfl/chinese-electra-base-discriminator |
+| ELECTRA-base, Chinese | generator | hfl/chinese-electra-base-generator |
 | ELECTRA-small, Chinese | discriminator | hfl/chinese-electra-small-discriminator |
+| ELECTRA-small, Chinese | generator | hfl/chinese-electra-small-generator |
 
 
 ### PaddleHub

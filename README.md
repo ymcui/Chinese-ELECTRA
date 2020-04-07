@@ -19,6 +19,8 @@
 
 
 ## 新闻
+2020/4/7 PyTorch用户可通过[🤗Transformers](https://github.com/huggingface/transformers)加载模型，稍后更新离线版本，查看[快速加载](#快速加载)
+
 2020/3/31 本目录发布的模型已接入[飞桨PaddleHub](https://github.com/PaddlePaddle/PaddleHub)，查看[快速加载](#快速加载)
 
 2020/3/25 Chinese ELECTRA-small/base已发布，请查看[模型下载](#模型下载)
@@ -55,8 +57,8 @@
 
 | 模型简称 | 语料 | Google下载 | 讯飞云下载 | 压缩包大小 |
 | :------- | :--------- | :---------: | :---------: | :---------: | 
-| **`ELECTRA-base, Chinese`** | 中文维基+通用数据 | [TensorFlow](https://drive.google.com/open?id=1FMwrs2weFST-iAuZH3umMa6YZVeIP8wD) | [TensorFlow（密码3VQu）](https://pan.iflytek.com:443/link/43B111080BD4A2D3370423912B45491E) | 383M |
-| **`ELECTRA-small, Chinese`** | 中文维基+通用数据 | [TensorFlow](https://drive.google.com/open?id=1uab-9T1kR9HgD2NB0Kz1JB_TdSKgJIds) | [TensorFlow（密码wm2E）](https://pan.iflytek.com:443/link/E5B4E8FE8B22A5FF03184D34CB2F1767) | 46M |
+| **`ELECTRA-base, Chinese`** | 中文维基+通用数据 | [TensorFlow](https://drive.google.com/open?id=1FMwrs2weFST-iAuZH3umMa6YZVeIP8wD) <br/> [PyTorch]() | [TensorFlow（密码3VQu）](https://pan.iflytek.com:443/link/43B111080BD4A2D3370423912B45491E)  <br/> [PyTorch]() | 383M |
+| **`ELECTRA-small, Chinese`** | 中文维基+通用数据 | [TensorFlow](https://drive.google.com/open?id=1uab-9T1kR9HgD2NB0Kz1JB_TdSKgJIds) <br/> [PyTorch]() | [TensorFlow（密码wm2E）](https://pan.iflytek.com:443/link/E5B4E8FE8B22A5FF03184D34CB2F1767) <br/> [PyTorch]() | 46M |
 
 中国大陆境内建议使用讯飞云下载点，境外用户建议使用谷歌下载点。 
 以TensorFlow版`ELECTRA-small, Chinese`为例，下载完毕后对zip文件进行解压得到：
@@ -76,11 +78,9 @@ chinese_electra_small_L-12_H-256_A-4.zip
 
 
 ## 快速加载
-### 使用Huggingface-Transformers（BETA）
+### 使用Huggingface-Transformers
 
-**注意：目前Huggingface-Transformers对ELECTRA的支持仍处于beta状态，建议等待正式发布后再通过下述方式调用。**
-
-依托于[Huggingface-Transformers](https://github.com/huggingface/transformers)，可轻松调用中文ELECTRA模型。
+[Huggingface-Transformers 2.8.0](https://github.com/huggingface/transformers/releases/tag/v2.8.0)版本已正式支持ELECTRA模型，可通过如下命令调用。
 ```python
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 model = AutoModel.from_pretrained(MODEL_NAME) 
@@ -91,7 +91,9 @@ model = AutoModel.from_pretrained(MODEL_NAME)
 | 模型名 | 组件 | MODEL_NAME |
 | - | - | - | 
 | ELECTRA-base, Chinese | discriminator | hfl/chinese-electra-base-discriminator |
+| ELECTRA-base, Chinese | generator | hfl/chinese-electra-base-generator |
 | ELECTRA-small, Chinese | discriminator | hfl/chinese-electra-small-discriminator |
+| ELECTRA-small, Chinese | generator | hfl/chinese-electra-small-generator |
 
 
 ### 使用PaddleHub
