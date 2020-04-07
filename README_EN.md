@@ -47,8 +47,10 @@ We provide TensorFlow models at the moment.
 
 | Model | Data | Google Drive | iFLYTEK Cloud | Size |
 | :------- | :--------- | :---------: | :---------: | :---------: | 
-| **`ELECTRA-base, Chinese`** | Wikipedia+Extended data | [TensorFlow](https://drive.google.com/open?id=1FMwrs2weFST-iAuZH3umMa6YZVeIP8wD) <br/> [PyTorch]()  | [TensorFlow（pw:3VQu)](https://pan.iflytek.com:443/link/43B111080BD4A2D3370423912B45491E) <br/> [PyTorch]()  | 383M |
-| **`ELECTRA-small, Chinese`** | Wikipedia+Extended data | [TensorFlow](https://drive.google.com/open?id=1uab-9T1kR9HgD2NB0Kz1JB_TdSKgJIds) <br/> [PyTorch]()  | [TensorFlow（pw:wm2E)](https://pan.iflytek.com:443/link/E5B4E8FE8B22A5FF03184D34CB2F1767) <br/> [PyTorch]()  | 46M |
+| **`ELECTRA-base, Chinese`** | Wikipedia+Extended data | [TensorFlow](https://drive.google.com/open?id=1FMwrs2weFST-iAuZH3umMa6YZVeIP8wD) <br/> [PyTorch-D](https://drive.google.com/open?id=1iBanmudRHLm3b4X4kL_FxccurDjL4RYe) <br/> [PyTorch-G](https://drive.google.com/open?id=1x-fcgS9GU8X51H1FFiqkh0RIDMGTTX7c) | [TensorFlow (pw:3VQu)](https://pan.iflytek.com:443/link/43B111080BD4A2D3370423912B45491E) <br/> PyTorch | 383M |
+| **`ELECTRA-small, Chinese`** | Wikipedia+Extended data |[ TensorFlow](https://drive.google.com/open?id=1uab-9T1kR9HgD2NB0Kz1JB_TdSKgJIds) <br/> [PyTorch-D](https://drive.google.com/open?id=1A1wdw41kOFC3n3AjfFTRZHQdjCL84bsg) <br/> [PyTorch-G](https://drive.google.com/open?id=1FpdHG2UowDTIepiuOiJOChrtwJSMQJ6N) | [TensorFlow (pw:wm2E)](https://pan.iflytek.com:443/link/E5B4E8FE8B22A5FF03184D34CB2F1767) <br/> PyTorch | 46M |
+
+*PyTorch-D: discriminator, PyTorch-G: generator
 
 The users from Mainland China are encouraged to use iFLYTEK Cloud download links, and the others may use Google Drive links.
 The ZIP package includes the following files (For example, `ELECTRA-small, Chinese`):

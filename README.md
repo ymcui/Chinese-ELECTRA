@@ -19,7 +19,7 @@
 
 
 ## 新闻
-2020/4/7 PyTorch用户可通过[🤗Transformers](https://github.com/huggingface/transformers)加载模型，稍后更新离线版本，查看[快速加载](#快速加载)
+2020/4/7 PyTorch用户可通过[🤗Transformers](https://github.com/huggingface/transformers)加载模型，查看[快速加载](#快速加载)
 
 2020/3/31 本目录发布的模型已接入[飞桨PaddleHub](https://github.com/PaddlePaddle/PaddleHub)，查看[快速加载](#快速加载)
 
@@ -57,8 +57,10 @@
 
 | 模型简称 | 语料 | Google下载 | 讯飞云下载 | 压缩包大小 |
 | :------- | :--------- | :---------: | :---------: | :---------: | 
-| **`ELECTRA-base, Chinese`** | 中文维基+通用数据 | [TensorFlow](https://drive.google.com/open?id=1FMwrs2weFST-iAuZH3umMa6YZVeIP8wD) <br/> [PyTorch]() | [TensorFlow（密码3VQu）](https://pan.iflytek.com:443/link/43B111080BD4A2D3370423912B45491E)  <br/> [PyTorch]() | 383M |
-| **`ELECTRA-small, Chinese`** | 中文维基+通用数据 | [TensorFlow](https://drive.google.com/open?id=1uab-9T1kR9HgD2NB0Kz1JB_TdSKgJIds) <br/> [PyTorch]() | [TensorFlow（密码wm2E）](https://pan.iflytek.com:443/link/E5B4E8FE8B22A5FF03184D34CB2F1767) <br/> [PyTorch]() | 46M |
+| **`ELECTRA-base, Chinese`** | 中文维基+通用数据 | [TensorFlow](https://drive.google.com/open?id=1FMwrs2weFST-iAuZH3umMa6YZVeIP8wD) <br/> [PyTorch-D](https://drive.google.com/open?id=1iBanmudRHLm3b4X4kL_FxccurDjL4RYe) <br/> [PyTorch-G](https://drive.google.com/open?id=1x-fcgS9GU8X51H1FFiqkh0RIDMGTTX7c) | [TensorFlow（密码3VQu）](https://pan.iflytek.com:443/link/43B111080BD4A2D3370423912B45491E) <br/> PyTorch | 383M |
+| **`ELECTRA-small, Chinese`** | 中文维基+通用数据 | [TensorFlow](https://drive.google.com/open?id=1uab-9T1kR9HgD2NB0Kz1JB_TdSKgJIds) <br/> [PyTorch-D](https://drive.google.com/open?id=1A1wdw41kOFC3n3AjfFTRZHQdjCL84bsg) <br/> [PyTorch-G](https://drive.google.com/open?id=1FpdHG2UowDTIepiuOiJOChrtwJSMQJ6N) | [TensorFlow（密码wm2E）](https://pan.iflytek.com:443/link/E5B4E8FE8B22A5FF03184D34CB2F1767) <br/> PyTorch | 46M |
+
+*PyTorch-D: discriminator, PyTorch-G: generator
 
 中国大陆境内建议使用讯飞云下载点，境外用户建议使用谷歌下载点。 
 以TensorFlow版`ELECTRA-small, Chinese`为例，下载完毕后对zip文件进行解压得到：
