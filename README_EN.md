@@ -256,10 +256,10 @@ A: We recommend to use the learning rate in the paper as default (3e-4 for small
 Note that the initial learning rate may be higher than that in BERT or RoBERTa.
 
 **Q: Do you have PyTorch models?**  
-A: No. But you could wait for [HuggingFace-Transformers](https://github.com/huggingface/transformers) to support the ELECTRA model. At that time, we will update PyTorch models accordingly.
+A: Yes. You can check [Download](#Download).
 
 **Q: Is it possible to share the training data?**  
-A: I am sorry that it is not possible
+A: I am sorry that it is not possible.
 
 **Q: Do you have any future plans?**  
 A: Stay tuned!

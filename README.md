@@ -274,7 +274,7 @@ A: 我们建议使用原论文使用的学习率作为初始基线（small是3e-
 需要注意的是，相比BERT、RoBERTa一类的模型来说ELECTRA的学习率要相对大一些。
 
 **Q: 有没有PyTorch版权重？**  
-A: 暂时没有，建议等[HuggingFace-Transformers](https://github.com/huggingface/transformers)更新支持ELECTRA后我们会更新PyTorch版权重以及config文件。或者可以采用 #3的方法进行转换（需搭配beta版的Transformers）。
+A: 有，[模型下载](#模型下载)。
 
 **Q: 预训练用的数据能共享一下吗？**  
 A: 很遗憾，不可以。
