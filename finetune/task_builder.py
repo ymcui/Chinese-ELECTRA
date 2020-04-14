@@ -78,5 +78,9 @@ def get_task(config: configure_finetuning.FinetuningConfig, task_name,
     return qa_tasks.CMRC2018(config, tokenizer)
   elif task_name == "drcd":
     return qa_tasks.DRCD(config, tokenizer)   
+  elif task_name == "openrice-senti":
+    return classification_tasks.OpenRiceSenti(config, tokenizer)  
+  elif task_name == "lihkg-cat":
+    return classification_tasks.LihkgCat(config, tokenizer)   
   else:
     raise ValueError("Unknown task " + task_name)

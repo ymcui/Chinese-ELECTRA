@@ -507,3 +507,37 @@ class LCQMC(ClassificationTask):
   def _create_examples(self, lines, split):
     return self._load_glue(lines, split, 0, 1, 2, skip_first_line=True)
 
+
+#
+class OpenRiceSenti(ClassificationTask):
+  """OpenRiceSenti."""
+
+  def __init__(self, config: configure_finetuning.FinetuningConfig, tokenizer):
+    super(OpenRiceSenti, self).__init__(config, "openrice-senti", tokenizer,
+                               ["smile", "ok", "cry"])
+
+  def get_examples(self, split):
+    return self._create_examples(read_tsv(
+        os.path.join(self.config.raw_data_dir(self.name), split + ".tsv"),
+        max_lines=100 if self.config.debug else None), split)
+
+  def _create_examples(self, lines, split):
+    return self._load_glue(lines, split, 1, None, 0, skip_first_line=True)
+
+
+#
+class LihkgCat(ClassificationTask):
+  """LihkgCat."""
+
+  def __init__(self, config: configure_finetuning.FinetuningConfig, tokenizer):
+    super(LihkgCat, self).__init__(config, "lihkg-cat", tokenizer,
+                               ["1", "4", "5", "6", "7", "8", "9", "10", "11", 
+                               "14", "15", "16", "17", "18", "21", "30", "31", "33"])
+
+  def get_examples(self, split):
+    return self._create_examples(read_tsv(
+        os.path.join(self.config.raw_data_dir(self.name), split + ".tsv"),
+        max_lines=100 if self.config.debug else None), split)
+
+  def _create_examples(self, lines, split):
+    return self._load_glue(lines, split, 1, None, 0, skip_first_line=True)
