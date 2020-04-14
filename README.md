@@ -26,7 +26,7 @@ I provide only the small TensorFlow model at the moment.
 * **`ELECTRA-small, Hongkongese`**: 12-layer, 256-hidden, 4-heads, 12M parameters
 
 | Model | Google Drive | Size |
-| :------- | :--------- | :---------: | :---------: | :---------: | 
+| :------- | :--------- | :---------: |
 | **`ELECTRA-small, Hongkongese`** | [TensorFlow](https://drive.google.com/file/d/10PD5tXTXF3dn23ypuqTXne5Vo-2EaMbK/view?usp=sharing) | 159MB |
 
 The ZIP package includes the following files (For example, `ELECTRA-small, Hongkongese`):
