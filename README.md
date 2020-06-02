@@ -78,7 +78,7 @@ chinese_electra_small_L-12_H-256_A-4.zip
     |- vocab.txt                            # 词表
 ```
 
-如需PyTorch版本，请自行通过🤗Transformers提供的转换脚本`[convert_electra_original_tf_checkpoint_to_pytorch.py](https://github.com/huggingface/transformers/blob/master/src/transformers/convert_electra_original_tf_checkpoint_to_pytorch.py)`进行转换。例如，
+如需PyTorch版本，请自行通过🤗Transformers提供的转换脚本[convert_electra_original_tf_checkpoint_to_pytorch.py](https://github.com/huggingface/transformers/blob/master/src/transformers/convert_electra_original_tf_checkpoint_to_pytorch.py)进行转换。例如，
 ```bash
 python transformers/src/transformers/convert_electra_original_tf_checkpoint_to_pytorch.py \
 --tf_checkpoint_path ./path-to-large-model/ \
