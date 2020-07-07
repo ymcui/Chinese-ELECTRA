@@ -110,60 +110,63 @@ class SpanBasedQAScorer(scorer.Scorer):
       # keep track of the minimum score of null start+end of position 0
       score_null = 1000000  # large and positive
       for (feature_index, feature) in enumerate(features):
-        result = unique_id_to_result[feature[self._name + "_eid"]]
-        if self._config.joint_prediction:
-          start_indexes = result.start_top_index
-          end_indexes = result.end_top_index
-        else:
-          start_indexes = _get_best_indexes(result.start_logits,
-                                            self._config.n_best_size)
-          end_indexes = _get_best_indexes(result.end_logits,
-                                          self._config.n_best_size)
-        # if we could have irrelevant answers, get the min score of irrelevant
-        if self._v2:
-          if self._config.answerable_classifier:
-            feature_null_score = result.answerable_logit
+        try:
+          result = unique_id_to_result[feature[self._name + "_eid"]]
+          if self._config.joint_prediction:
+            start_indexes = result.start_top_index
+            end_indexes = result.end_top_index
           else:
-            feature_null_score = result.start_logits[0] + result.end_logits[0]
-          if feature_null_score < score_null:
-            score_null = feature_null_score
-        for i, start_index in enumerate(start_indexes):
-          for j, end_index in enumerate(
-              end_indexes[i] if self._config.joint_prediction else end_indexes):
-            # We could hypothetically create invalid predictions, e.g., predict
-            # that the start of the span is in the question. We throw out all
-            # invalid predictions.
-            if start_index >= len(feature[self._name + "_tokens"]):
-              continue
-            if end_index >= len(feature[self._name + "_tokens"]):
-              continue
-            if start_index == 0:
-              continue
-            if start_index not in feature[self._name + "_token_to_orig_map"]:
-              continue
-            if end_index not in feature[self._name + "_token_to_orig_map"]:
-              continue
-            if not feature[self._name + "_token_is_max_context"].get(
-                start_index, False):
-              continue
-            if end_index < start_index:
-              continue
-            length = end_index - start_index + 1
-            if length > self._config.max_answer_length:
-              continue
-            start_logit = (result.start_top_log_probs[i] if
-                           self._config.joint_prediction else
-                           result.start_logits[start_index])
-            end_logit = (result.end_top_log_probs[i, j] if
-                         self._config.joint_prediction else
-                         result.end_logits[end_index])
-            prelim_predictions.append(
-                _PrelimPrediction(
-                    feature_index=feature_index,
-                    start_index=start_index,
-                    end_index=end_index,
-                    start_logit=start_logit,
-                    end_logit=end_logit))
+            start_indexes = _get_best_indexes(result.start_logits,
+                                              self._config.n_best_size)
+            end_indexes = _get_best_indexes(result.end_logits,
+                                            self._config.n_best_size)
+          # if we could have irrelevant answers, get the min score of irrelevant
+          if self._v2:
+            if self._config.answerable_classifier:
+              feature_null_score = result.answerable_logit
+            else:
+              feature_null_score = result.start_logits[0] + result.end_logits[0]
+            if feature_null_score < score_null:
+              score_null = feature_null_score
+          for i, start_index in enumerate(start_indexes):
+            for j, end_index in enumerate(
+                end_indexes[i] if self._config.joint_prediction else end_indexes):
+              # We could hypothetically create invalid predictions, e.g., predict
+              # that the start of the span is in the question. We throw out all
+              # invalid predictions.
+              if start_index >= len(feature[self._name + "_tokens"]):
+                continue
+              if end_index >= len(feature[self._name + "_tokens"]):
+                continue
+              if start_index == 0:
+                continue
+              if start_index not in feature[self._name + "_token_to_orig_map"]:
+                continue
+              if end_index not in feature[self._name + "_token_to_orig_map"]:
+                continue
+              if not feature[self._name + "_token_is_max_context"].get(
+                  start_index, False):
+                continue
+              if end_index < start_index:
+                continue
+              length = end_index - start_index + 1
+              if length > self._config.max_answer_length:
+                continue
+              start_logit = (result.start_top_log_probs[i] if
+                            self._config.joint_prediction else
+                            result.start_logits[start_index])
+              end_logit = (result.end_top_log_probs[i, j] if
+                          self._config.joint_prediction else
+                          result.end_logits[end_index])
+              prelim_predictions.append(
+                  _PrelimPrediction(
+                      feature_index=feature_index,
+                      start_index=start_index,
+                      end_index=end_index,
+                      start_logit=start_logit,
+                      end_logit=end_logit))
+        except KeyError as e: 
+          print(e)          
 
       if self._v2:
         if len(prelim_predictions) == 0 and self._config.debug:
