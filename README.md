@@ -1,6 +1,6 @@
 ## ELECTRA-Hongkongese and XLNet-Hongkongese
 
-Google and Stanford University released a transformer model called [ELECTRA]((https://openreview.net/pdf?id=r1xMH1BtvB)) which is modeled as a 
+Google and Stanford University released a transformer model called [ELECTRA](https://openreview.net/pdf?id=r1xMH1BtvB) which is modeled as a 
 discriminator. This allows for fewer parameters and can be trained with lower compute to get to the same results as BERT.
 
 This repo is for the ELECTRA models pretrained from purely Hong Kong data only. In addition to a Traditional Chinese question answering dataset, three Hongkongese evaluation dataset were created to explore what they can do. Training was done with the [official ELECTRA repo](https://github.com/google-research/electra). This repo was forked from [Chinese ELECTRA](https://github.com/ymcui/Chinese-ELECTRA) to reuse the evaluation code. 
@@ -16,6 +16,8 @@ All the models are available through [Transformers](https://github.com/huggingfa
  * [electra-hongkongese-large-discriminator](https://huggingface.co/toastynews/electra-hongkongese-large-discriminator)
  * [electra-hongkongese-large-generator](https://huggingface.co/toastynews/electra-hongkongese-large-generator)
 
+ *Research supported with Cloud TPUs from Google's TensorFlow Research Cloud (TFRC)*
+
 
 ## Guide
 | Section | Description |
@@ -25,12 +27,13 @@ All the models are available through [Transformers](https://github.com/huggingfa
 
 
 ## Details
-Basics technical information for the models.
+Basics technical information for the models. All models were trained on a single TPUv3.
 | Value            | XLNet Base |ELECTRA Small | ELELCTRA Base | ELELCTRA Large|
 | :--------------- |----------: |------------: |-------------: |-------------: |
 | Tokens           |       507M |         507M |          507M |          507M |
 | Max Sequence Length |     512 |          512 |           512 |           512 |
 | Parameters       |       117M |          12M |          102M |          324M |
+| Batch Size       |         32 |          384 |           256 |            96 |
 | Vocab Size       |      32000 |         30000|          30000|          30000|
 | Tokenizer        | SentencePiece |  WordPiece|      WordPiece|      WordPiece|
 
