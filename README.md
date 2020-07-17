@@ -10,12 +10,19 @@
         <img alt="GitHub" src="https://img.shields.io/github/license/ymcui/Chinese-ELECTRA.svg?color=blue&style=flat-square">
     </a>
 </p>
-
 谷歌与斯坦福大学共同研发的最新预训练模型ELECTRA因其小巧的模型体积以及良好的模型性能受到了广泛关注。
 为了进一步促进中文预训练模型技术的研究与发展，哈工大讯飞联合实验室基于官方ELECTRA训练代码以及大规模的中文数据训练出中文ELECTRA预训练模型供大家下载使用。
 其中ELECTRA-small模型可与BERT-base甚至其他同等规模的模型相媲美，而参数量仅为BERT-base的1/10。
 
 本项目基于谷歌&斯坦福大学官方的ELECTRA：[https://github.com/google-research/electra](https://github.com/google-research/electra)
+
+其他相关资源：
+
+- 中文BERT-wwm预训练模型：https://github.com/ymcui/Chinese-BERT-wwm
+- 中文XLNet预训练模型：https://github.com/ymcui/Chinese-XLNet
+- 知识蒸馏工具TextBrewer：https://github.com/airaria/TextBrewer
+
+查看更多哈工大讯飞联合实验室（HFL）发布的资源：https://github.com/ymcui/HFL-Anthology
 
 
 ## 新闻
@@ -107,7 +114,7 @@ model = AutoModel.from_pretrained(MODEL_NAME)
 其中`MODEL_NAME`对应列表如下：
 
 | 模型名 | 组件 | MODEL_NAME |
-| - | - | - | 
+| - | - | - |
 | ELECTRA-large, Chinese | discriminator | hfl/chinese-electra-large-discriminator |
 | ELECTRA-large, Chinese | generator | hfl/chinese-electra-large-generator |
 | ELECTRA-base, Chinese | discriminator | hfl/chinese-electra-base-discriminator |
@@ -155,10 +162,10 @@ module = hub.Module(name=MODULE_NAME)
 
 | 模型 | 开发集 | 测试集 | 挑战集 | 参数量 |
 | :------- | :---------: | :---------: | :---------: | :---------: |
-| BERT-base | 65.5 (64.4) / 84.5 (84.0) | 70.0 (68.7) / 87.0 (86.3) | 18.6 (17.0) / 43.3 (41.3) | 102M | 
-| BERT-wwm | 66.3 (65.0) / 85.6 (84.7) | 70.5 (69.1) / 87.4 (86.7) | 21.0 (19.3) / 47.0 (43.9) | 102M | 
-| BERT-wwm-ext | 67.1 (65.6) / 85.7 (85.0) | 71.4 (70.0) / 87.7 (87.0) | 24.0 (20.0) / 47.3 (44.6) | 102M | 
-| RoBERTa-wwm-ext | 67.4 (66.5) / 87.2 (86.5) | 72.6 (71.4) / 89.4 (88.8) | 26.2 (24.6) / 51.0 (49.1) | 102M | 
+| BERT-base | 65.5 (64.4) / 84.5 (84.0) | 70.0 (68.7) / 87.0 (86.3) | 18.6 (17.0) / 43.3 (41.3) | 102M |
+| BERT-wwm | 66.3 (65.0) / 85.6 (84.7) | 70.5 (69.1) / 87.4 (86.7) | 21.0 (19.3) / 47.0 (43.9) | 102M |
+| BERT-wwm-ext | 67.1 (65.6) / 85.7 (85.0) | 71.4 (70.0) / 87.7 (87.0) | 24.0 (20.0) / 47.3 (44.6) | 102M |
+| RoBERTa-wwm-ext | 67.4 (66.5) / 87.2 (86.5) | 72.6 (71.4) / 89.4 (88.8) | 26.2 (24.6) / 51.0 (49.1) | 102M |
 | RBT3 | 57.0 / 79.0 | 62.2 / 81.8 | 14.7 / 36.2 | 38M |
 | **ELECTRA-small** | 63.4 (62.9) / 80.8 (80.2) | 67.8 (67.4) / 83.4 (83.0) | 16.3 (15.4) / 37.2 (35.8) | 12M |
 | **ELECTRA-small-ex** | 66.4 / 82.2 | 71.3 / 85.3 | 18.1 / 38.3 | 25M |
@@ -172,10 +179,10 @@ module = hub.Module(name=MODULE_NAME)
 
 | 模型 | 开发集 | 测试集 | 参数量 |
 | :------- | :---------: | :---------: | :---------: |
-| BERT-base | 83.1 (82.7) / 89.9 (89.6) | 82.2 (81.6) / 89.2 (88.8) | 102M | 
-| BERT-wwm | 84.3 (83.4) / 90.5 (90.2) | 82.8 (81.8) / 89.7 (89.0) | 102M | 
-| BERT-wwm-ext | 85.0 (84.5) / 91.2 (90.9) | 83.6 (83.0) / 90.4 (89.9) | 102M | 
-| RoBERTa-wwm-ext | 86.6 (85.9) / 92.5 (92.2) | 85.6 (85.2) / 92.0 (91.7) | 102M | 
+| BERT-base | 83.1 (82.7) / 89.9 (89.6) | 82.2 (81.6) / 89.2 (88.8) | 102M |
+| BERT-wwm | 84.3 (83.4) / 90.5 (90.2) | 82.8 (81.8) / 89.7 (89.0) | 102M |
+| BERT-wwm-ext | 85.0 (84.5) / 91.2 (90.9) | 83.6 (83.0) / 90.4 (89.9) | 102M |
+| RoBERTa-wwm-ext | 86.6 (85.9) / 92.5 (92.2) | 85.6 (85.2) / 92.0 (91.7) | 102M |
 | RBT3 | 76.3 / 84.9 | 75.0 / 83.9 | 38M |
 | **ELECTRA-small** | 79.8 (79.4) / 86.7 (86.4) | 79.0 (78.5) / 85.8 (85.6) | 12M |
 | **ELECTRA-small-ex** | 84.0 / 89.5 | 83.3 / 89.1 | 25M |
@@ -188,11 +195,11 @@ module = hub.Module(name=MODULE_NAME)
 
 | 模型 | 开发集 | 测试集 | 参数量 |
 | :------- | :---------: | :---------: | :---------: |
-| BERT-base | 77.8 (77.4) | 77.8 (77.5) | 102M | 
-| BERT-wwm | 79.0 (78.4) | 78.2 (78.0) | 102M | 
+| BERT-base | 77.8 (77.4) | 77.8 (77.5) | 102M |
+| BERT-wwm | 79.0 (78.4) | 78.2 (78.0) | 102M |
 | BERT-wwm-ext | 79.4 (78.6) | 78.7 (78.3) | 102M |
 | RoBERTa-wwm-ext | 80.0 (79.2) | 78.8 (78.3) | 102M |
-| RBT3 | 72.2 | 72.3 | 38M | 
+| RBT3 | 72.2 | 72.3 | 38M |
 | **ELECTRA-small** | 73.3 (72.5) | 73.1 (72.6) | 12M |
 | **ELECTRA-small-ex** | 75.4 | 75.8 | 25M |
 | **ELECTRA-base** | 77.9 (77.0) | 78.4 (77.8) | 102M |
@@ -208,7 +215,7 @@ module = hub.Module(name=MODULE_NAME)
 | BERT-wwm | 95.1 (94.5) | 95.4 (95.0) | 102M |
 | BERT-wwm-ext | 95.4 (94.6) | 95.3 (94.7) | 102M |
 | RoBERTa-wwm-ext | 95.0 (94.6) | 95.6 (94.8) | 102M |
-| RBT3 | 92.8 | 92.8 | 38M | 
+| RBT3 | 92.8 | 92.8 | 38M |
 | **ELECTRA-small** | 92.8 (92.5) | 94.3 (93.5) | 12M |
 | **ELECTRA-small-ex** | 92.6 | 93.6 | 25M |
 | **ELECTRA-base** | 93.8 (93.0) | 94.5 (93.5) | 102M |
@@ -222,7 +229,7 @@ module = hub.Module(name=MODULE_NAME)
 
 | 模型 | 开发集 | 测试集 | 参数量 |
 | :------- | :---------: | :---------: | :---------: |
-| BERT | 89.4 (88.4) | 86.9 (86.4) | 102M | 
+| BERT | 89.4 (88.4) | 86.9 (86.4) | 102M |
 | BERT-wwm | 89.4 (89.2) | 87.0 (86.8) | 102M |
 | BERT-wwm-ext | 89.6 (89.2) | 87.1 (86.6) | 102M |
 | RoBERTa-wwm-ext | 89.0 (88.7) | 86.4 (86.1) | 102M |
@@ -239,7 +246,7 @@ module = hub.Module(name=MODULE_NAME)
 
 | 模型 | 开发集 | 测试集 | 参数量 |
 | :------- | :---------: | :---------: | :---------: |
-| BERT | 86.0 (85.5) | 84.8 (84.6) | 102M | 
+| BERT | 86.0 (85.5) | 84.8 (84.6) | 102M |
 | BERT-wwm | 86.1 (85.6) | 85.2 (84.9) | 102M |
 | BERT-wwm-ext | 86.4 (85.5) | 85.3 (84.8) | 102M |
 | RoBERTa-wwm-ext | 86.0 (85.4) | 85.0 (84.6) | 102M |

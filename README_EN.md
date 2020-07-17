@@ -7,6 +7,14 @@ ELECTRA-small could reach similar or even higher scores on several NLP tasks wit
 
 This project is based on the official code of ELECTRA: [https://github.com/google-research/electra](https://github.com/google-research/electra)
 
+You may also interested in,
+
+- Chinese BERT-wwm: https://github.com/ymcui/Chinese-BERT-wwm
+- Chinese XLNet: https://github.com/ymcui/Chinese-XLNet
+- Knowledge Distillation Toolkit - TextBrewer: https://github.com/airaria/TextBrewer
+
+More resources by HFL: https://github.com/ymcui/HFL-Anthology
+
 
 ## News
 May 29, 2020 We have released Chinese ELECTRA-large/small-ex models, check [Download](#Download). We are sorry that only Google Drive links are available at present.
@@ -50,7 +58,7 @@ We provide TensorFlow models at the moment.
 * **`ELECTRA-small, Chinese`**: 12-layer, 256-hidden, 4-heads, 12M parameters
 
 | Model | Google Drive | iFLYTEK Cloud | Size |
-| :------- | :--------- | :---------: | :---------: | 
+| :------- | :--------- | :---------: | :---------: |
 | **`ELECTRA-large, Chinese (new)`** | [TensorFlow+config](https://drive.google.com/file/d/1ny0NMLkEWG6rseDLiF_NujdHxDcIN51m/view?usp=sharing) | N/A | 1G |
 | **`ELECTRA-small-ex, Chinese (new)`** | [TensorFlow+config](https://drive.google.com/file/d/1LluPORc7xtFmCTFR4IF17q77ip82i7__/view?usp=sharing) | N/A | 92M |
 | **`ELECTRA-base, Chinese`** | [TensorFlow](https://drive.google.com/open?id=1FMwrs2weFST-iAuZH3umMa6YZVeIP8wD) <br/> [PyTorch-D](https://drive.google.com/open?id=1iBanmudRHLm3b4X4kL_FxccurDjL4RYe) <br/> [PyTorch-G](https://drive.google.com/open?id=1x-fcgS9GU8X51H1FFiqkh0RIDMGTTX7c) | [TensorFlow (pw:3VQu)](https://pan.iflytek.com:443/link/43B111080BD4A2D3370423912B45491E) <br/> [PyTorch-D (pw:WQ8r)](http://pan.iflytek.com:80/link/31F0C2FB919C6099DEC72FD72C0AFCFB) <br/> [PyTorch-G (pw:XxnY)](http://pan.iflytek.com:80/link/2DD6237FE1B99ECD81F775FC2C272149)| 383M |
@@ -145,10 +153,10 @@ To ensure the stability of the results, we run 10 times for each experiment and 
 
 | Model | Development | Test | Challenge | #Params |
 | :------- | :---------: | :---------: | :---------: | :---------: |
-| BERT-base | 65.5 (64.4) / 84.5 (84.0) | 70.0 (68.7) / 87.0 (86.3) | 18.6 (17.0) / 43.3 (41.3) | 102M | 
-| BERT-wwm | 66.3 (65.0) / 85.6 (84.7) | 70.5 (69.1) / 87.4 (86.7) | 21.0 (19.3) / 47.0 (43.9) | 102M | 
-| BERT-wwm-ext | 67.1 (65.6) / 85.7 (85.0) | 71.4 (70.0) / 87.7 (87.0) | 24.0 (20.0) / 47.3 (44.6) | 102M | 
-| RoBERTa-wwm-ext | 67.4 (66.5) / 87.2 (86.5) | 72.6 (71.4) / 89.4 (88.8) | 26.2 (24.6) / 51.0 (49.1) | 102M | 
+| BERT-base | 65.5 (64.4) / 84.5 (84.0) | 70.0 (68.7) / 87.0 (86.3) | 18.6 (17.0) / 43.3 (41.3) | 102M |
+| BERT-wwm | 66.3 (65.0) / 85.6 (84.7) | 70.5 (69.1) / 87.4 (86.7) | 21.0 (19.3) / 47.0 (43.9) | 102M |
+| BERT-wwm-ext | 67.1 (65.6) / 85.7 (85.0) | 71.4 (70.0) / 87.7 (87.0) | 24.0 (20.0) / 47.3 (44.6) | 102M |
+| RoBERTa-wwm-ext | 67.4 (66.5) / 87.2 (86.5) | 72.6 (71.4) / 89.4 (88.8) | 26.2 (24.6) / 51.0 (49.1) | 102M |
 | RBT3 | 57.0 / 79.0 | 62.2 / 81.8 | 14.7 / 36.2 | 38M |
 | **ELECTRA-small** | 63.4 (62.9) / 80.8 (80.2) | 67.8 (67.4) / 83.4 (83.0) | 16.3 (15.4) / 37.2 (35.8) | 12M |
 | **ELECTRA-small-ex** | 66.4 / 82.2 | 71.3 / 85.3 | 18.1 / 38.3 | 25M |
@@ -160,10 +168,10 @@ To ensure the stability of the results, we run 10 times for each experiment and 
 
 | Model | Development | Test | #Params |
 | :------- | :---------: | :---------: | :---------: |
-| BERT-base | 83.1 (82.7) / 89.9 (89.6) | 82.2 (81.6) / 89.2 (88.8) | 102M | 
-| BERT-wwm | 84.3 (83.4) / 90.5 (90.2) | 82.8 (81.8) / 89.7 (89.0) | 102M | 
-| BERT-wwm-ext | 85.0 (84.5) / 91.2 (90.9) | 83.6 (83.0) / 90.4 (89.9) | 102M | 
-| RoBERTa-wwm-ext | 86.6 (85.9) / 92.5 (92.2) | 85.6 (85.2) / 92.0 (91.7) | 102M | 
+| BERT-base | 83.1 (82.7) / 89.9 (89.6) | 82.2 (81.6) / 89.2 (88.8) | 102M |
+| BERT-wwm | 84.3 (83.4) / 90.5 (90.2) | 82.8 (81.8) / 89.7 (89.0) | 102M |
+| BERT-wwm-ext | 85.0 (84.5) / 91.2 (90.9) | 83.6 (83.0) / 90.4 (89.9) | 102M |
+| RoBERTa-wwm-ext | 86.6 (85.9) / 92.5 (92.2) | 85.6 (85.2) / 92.0 (91.7) | 102M |
 | RBT3 | 76.3 / 84.9 | 75.0 / 83.9 | 38M |
 | **ELECTRA-small** | 79.8 (79.4) / 86.7 (86.4) | 79.0 (78.5) / 85.8 (85.6) | 12M |
 | **ELECTRA-small-ex** | 84.0 / 89.5 | 83.3 / 89.1 | 25M |
@@ -175,11 +183,11 @@ We use [XNLI](https://github.com/google-research/bert/blob/master/multilingual.m
 
 | Model | Development | Test | #Params |
 | :------- | :---------: | :---------: | :---------: |
-| BERT-base | 77.8 (77.4) | 77.8 (77.5) | 102M | 
-| BERT-wwm | 79.0 (78.4) | 78.2 (78.0) | 102M | 
+| BERT-base | 77.8 (77.4) | 77.8 (77.5) | 102M |
+| BERT-wwm | 79.0 (78.4) | 78.2 (78.0) | 102M |
 | BERT-wwm-ext | 79.4 (78.6) | 78.7 (78.3) | 102M |
 | RoBERTa-wwm-ext | 80.0 (79.2) | 78.8 (78.3) | 102M |
-| RBT3 | 72.2 | 72.3 | 38M | 
+| RBT3 | 72.2 | 72.3 | 38M |
 | **ELECTRA-small** | 73.3 (72.5) | 73.1 (72.6) | 12M |
 | **ELECTRA-small-ex** | 75.4 | 75.8 | 25M |
 | **ELECTRA-base** | 77.9 (77.0) | 78.4 (77.8) | 102M |
@@ -194,7 +202,7 @@ We use [ChnSentiCorp](https://github.com/pengming617/bert_classification) data f
 | BERT-wwm | 95.1 (94.5) | 95.4 (95.0) | 102M |
 | BERT-wwm-ext | 95.4 (94.6) | 95.3 (94.7) | 102M |
 | RoBERTa-wwm-ext | 95.0 (94.6) | 95.6 (94.8) | 102M |
-| RBT3 | 92.8 | 92.8 | 38M | 
+| RBT3 | 92.8 | 92.8 | 38M |
 | **ELECTRA-small** | 92.8 (92.5) | 94.3 (93.5) | 12M |
 | **ELECTRA-small-ex** | 92.6 | 93.6 | 25M |
 | **ELECTRA-base** | 93.8 (93.0) | 94.5 (93.5) | 102M |
@@ -205,7 +213,7 @@ We use [ChnSentiCorp](https://github.com/pengming617/bert_classification) data f
 
 | Model | Development | Test | #Params |
 | :------- | :---------: | :---------: | :---------: |
-| BERT | 89.4 (88.4) | 86.9 (86.4) | 102M | 
+| BERT | 89.4 (88.4) | 86.9 (86.4) | 102M |
 | BERT-wwm | 89.4 (89.2) | 87.0 (86.8) | 102M |
 | BERT-wwm-ext | 89.6 (89.2) | 87.1 (86.6) | 102M |
 | RoBERTa-wwm-ext | 89.0 (88.7) | 86.4 (86.1) | 102M |
@@ -221,7 +229,7 @@ We use [ChnSentiCorp](https://github.com/pengming617/bert_classification) data f
 
 | Model | Development | Test | #Params |
 | :------- | :---------: | :---------: | :---------: |
-| BERT | 86.0 (85.5) | 84.8 (84.6) | 102M | 
+| BERT | 86.0 (85.5) | 84.8 (84.6) | 102M |
 | BERT-wwm | 86.1 (85.6) | 85.2 (84.9) | 102M |
 | BERT-wwm-ext | 86.4 (85.5) | 85.3 (84.8) | 102M |
 | RoBERTa-wwm-ext | 86.0 (85.4) | 85.0 (84.6) | 102M |
