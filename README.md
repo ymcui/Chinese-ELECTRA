@@ -24,6 +24,7 @@
 
 查看更多哈工大讯飞联合实验室（HFL）发布的资源：https://github.com/ymcui/HFL-Anthology
 
+### 哈工大讯飞联合实验室（HFL）2021提前批校园招聘开始了！欢迎各位[投递简历](https://wj.qq.com/s2/6730642/762d)！
 
 ## 新闻
 2020/5/29 Chinese ELECTRA-large/small-ex已发布，请查看[模型下载](#模型下载)，目前只提供Google Drive下载地址，敬请谅解。
