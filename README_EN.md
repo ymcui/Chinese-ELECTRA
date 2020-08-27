@@ -17,6 +17,8 @@ More resources by HFL: https://github.com/ymcui/HFL-Anthology
 
 
 ## News
+August 27, 2020 We are happy to announce that our model is on top of GLUE benchmark, check [leaderboard](https://gluebenchmark.com/leaderboard).
+
 May 29, 2020 We have released Chinese ELECTRA-large/small-ex models, check [Download](#Download). We are sorry that only Google Drive links are available at present.
 
 April 7, 2020 PyTorch models are available through [🤗Transformers](https://github.com/huggingface/transformers), check [Quick Load](#Quick-Load)
