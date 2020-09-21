@@ -17,6 +17,8 @@ More resources by HFL: https://github.com/ymcui/HFL-Anthology
 
 
 ## News
+**Sep 15, 2020 Our paper ["Revisiting Pre-Trained Models for Chinese Natural Language Processing"](https://arxiv.org/abs/2004.13922) is accepted to [Findings of EMNLP](https://2020.emnlp.org) as a long paper.**
+
 August 27, 2020 We are happy to announce that our model is on top of GLUE benchmark, check [leaderboard](https://gluebenchmark.com/leaderboard).
 
 May 29, 2020 We have released Chinese ELECTRA-large/small-ex models, check [Download](#Download). We are sorry that only Google Drive links are available at present.
@@ -37,6 +39,7 @@ March 25, 2020  We have released Chinese ELECTRA-small/base models, check [Downl
 | [Baselines](#Baselines) | Baseline results on MRC, Text Classification, etc. |
 | [Usage](#Usage) | Detailed instructions on how to use ELECTRA |
 | [FAQ](#FAQ) | Frequently Asked Questions |
+| [Citation](#Citation) | Citation |
 
 
 ## Introduction
@@ -302,6 +305,19 @@ A: I am sorry that it is not possible.
 
 **Q: Do you have any future plans?**  
 A: Stay tuned!
+
+## Citation
+If you find the technical report or resource is useful, please cite the following technical report in your paper.
+- https://arxiv.org/abs/2004.13922
+```
+@inproceedings{cui-etal-2020-revisiting,
+    title={Revisiting Pre-Trained Models for Chinese Natural Language Processing},
+    author={Cui, Yiming and Che, Wanxiang and Liu, Ting and Qin, Bing and Wang, Shijin and Hu, Guoping},
+    booktitle = "Findings of EMNLP",
+    year = "2020",
+    publisher = "Association for Computational Linguistics"
+}
+```
 
 
 ## Follow us

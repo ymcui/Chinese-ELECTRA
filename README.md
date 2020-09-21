@@ -27,7 +27,9 @@
 ### 哈工大讯飞联合实验室（HFL）2021提前批校园招聘开始了！欢迎各位[投递简历](https://wj.qq.com/s2/6730642/762d)！
 
 ## 新闻
-**2020/8/27 哈工大讯飞联合实验室在通用自然语言理解评测GLUE中荣登榜首，查看[GLUE榜单](https://gluebenchmark.com/leaderboard)，[新闻](http://dwz.date/ckrD)。**
+**2020/9/15 我们的论文["Revisiting Pre-Trained Models for Chinese Natural Language Processing"](https://arxiv.org/abs/2004.13922)被[Findings of EMNLP](https://2020.emnlp.org)录用为长文。**
+
+2020/8/27 哈工大讯飞联合实验室在通用自然语言理解评测GLUE中荣登榜首，查看[GLUE榜单](https://gluebenchmark.com/leaderboard)，[新闻](http://dwz.date/ckrD)。
 
 2020/5/29 Chinese ELECTRA-large/small-ex已发布，请查看[模型下载](#模型下载)，目前只提供Google Drive下载地址，敬请谅解。
 
@@ -46,7 +48,7 @@
 | [基线系统效果](#基线系统效果) | 中文基线系统效果：阅读理解、文本分类等 |
 | [使用方法](#使用方法) | 模型的详细使用方法 |
 | [FAQ](#FAQ) | 常见问题答疑 |
-
+| [引用](#引用) | 本目录的技术报告 |
 
 ## 简介
 **ELECTRA**提出了一套新的预训练框架，其中包括两个部分：**Generator**和**Discriminator**。
@@ -320,6 +322,19 @@ A: 很遗憾，不可以。
 
 **Q: 未来计划？**  
 A: 敬请关注。
+
+## 引用
+如果本目录中的内容对你的研究工作有所帮助，欢迎在论文中引用下述技术报告。
+- https://arxiv.org/abs/2004.13922
+```
+@inproceedings{cui-etal-2020-revisiting,
+    title={Revisiting Pre-Trained Models for Chinese Natural Language Processing},
+    author={Cui, Yiming and Che, Wanxiang and Liu, Ting and Qin, Bing and Wang, Shijin and Hu, Guoping},
+    booktitle = "Findings of EMNLP",
+    year = "2020",
+    publisher = "Association for Computational Linguistics"
+}
+```
 
 
 ## 关注我们
