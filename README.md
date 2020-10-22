@@ -18,6 +18,7 @@
 
 其他相关资源：
 
+- 中文MacBERT预训练模型：https://github.com/ymcui/MacBERT
 - 中文BERT-wwm预训练模型：https://github.com/ymcui/Chinese-BERT-wwm
 - 中文XLNet预训练模型：https://github.com/ymcui/Chinese-XLNet
 - 知识蒸馏工具TextBrewer：https://github.com/airaria/TextBrewer
@@ -25,17 +26,19 @@
 查看更多哈工大讯飞联合实验室（HFL）发布的资源：https://github.com/ymcui/HFL-Anthology
 
 ## 新闻
-**2020/9/15 我们的论文["Revisiting Pre-Trained Models for Chinese Natural Language Processing"](https://arxiv.org/abs/2004.13922)被[Findings of EMNLP](https://2020.emnlp.org)录用为长文。**
+**2020/10/22 ELECTRA-180g已发布，增加了CommonCrawl的高质量数据，查看[模型下载](#模型下载)**。
+
+2020/9/15 我们的论文["Revisiting Pre-Trained Models for Chinese Natural Language Processing"](https://arxiv.org/abs/2004.13922)被[Findings of EMNLP](https://2020.emnlp.org)录用为长文。
 
 2020/8/27 哈工大讯飞联合实验室在通用自然语言理解评测GLUE中荣登榜首，查看[GLUE榜单](https://gluebenchmark.com/leaderboard)，[新闻](http://dwz.date/ckrD)。
 
 2020/5/29 Chinese ELECTRA-large/small-ex已发布，请查看[模型下载](#模型下载)，目前只提供Google Drive下载地址，敬请谅解。
 
-2020/4/7 PyTorch用户可通过[🤗Transformers](https://github.com/huggingface/transformers)加载模型，查看[快速加载](#快速加载)
+2020/4/7 PyTorch用户可通过[🤗Transformers](https://github.com/huggingface/transformers)加载模型，查看[快速加载](#快速加载)。
 
-2020/3/31 本目录发布的模型已接入[飞桨PaddleHub](https://github.com/PaddlePaddle/PaddleHub)，查看[快速加载](#快速加载)
+2020/3/31 本目录发布的模型已接入[飞桨PaddleHub](https://github.com/PaddlePaddle/PaddleHub)，查看[快速加载](#快速加载)。
 
-2020/3/25 Chinese ELECTRA-small/base已发布，请查看[模型下载](#模型下载)
+2020/3/25 Chinese ELECTRA-small/base已发布，请查看[模型下载](#模型下载)。
 
 ## 内容导引
 | 章节 | 描述 |
@@ -50,6 +53,7 @@
 
 ## 简介
 **ELECTRA**提出了一套新的预训练框架，其中包括两个部分：**Generator**和**Discriminator**。
+
 - **Generator**: 一个小的MLM，在[MASK]的位置预测原来的词。Generator将用来把输入文本做部分词的替换。
 - **Discriminator**: 判断输入句子中的每个词是否被替换，即使用Replaced Token Detection (RTD)预训练任务，取代了BERT原始的Masked Language Model (MLM)。需要注意的是这里并没有使用Next Sentence Prediction (NSP)任务。
 
@@ -68,27 +72,28 @@
 * **`ELECTRA-small-ex, Chinese`**: 24-layer, 256-hidden, 4-heads, 25M parameters
 * **`ELECTRA-small, Chinese`**: 12-layer, 256-hidden, 4-heads, 12M parameters
 
+#### 大语料版（新版，180G数据）
+
 | 模型简称 | Google下载 | 讯飞云下载 | 压缩包大小 |
-| :------- | :--------- | :---------: | :---------: |
-| **`ELECTRA-large, Chinese (new)`** | [TensorFlow+config](https://drive.google.com/file/d/1ny0NMLkEWG6rseDLiF_NujdHxDcIN51m/view?usp=sharing) | 暂无 | 1G |
-| **`ELECTRA-small-ex, Chinese (new)`** | [TensorFlow+config](https://drive.google.com/file/d/1LluPORc7xtFmCTFR4IF17q77ip82i7__/view?usp=sharing) | 暂无 | 92M |
-| **`ELECTRA-base, Chinese`** | [TensorFlow](https://drive.google.com/open?id=1FMwrs2weFST-iAuZH3umMa6YZVeIP8wD) <br/> [PyTorch-D](https://drive.google.com/open?id=1iBanmudRHLm3b4X4kL_FxccurDjL4RYe) <br/> [PyTorch-G](https://drive.google.com/open?id=1x-fcgS9GU8X51H1FFiqkh0RIDMGTTX7c) | [TensorFlow（密码3VQu）](https://pan.iflytek.com:443/link/43B111080BD4A2D3370423912B45491E) <br/> [PyTorch-D（密码WQ8r）](http://pan.iflytek.com:80/link/31F0C2FB919C6099DEC72FD72C0AFCFB) <br/> [PyTorch-G（密码XxnY）](http://pan.iflytek.com:80/link/2DD6237FE1B99ECD81F775FC2C272149)| 383M |
-| **`ELECTRA-small, Chinese`** | [TensorFlow](https://drive.google.com/open?id=1uab-9T1kR9HgD2NB0Kz1JB_TdSKgJIds) <br/> [PyTorch-D](https://drive.google.com/open?id=1A1wdw41kOFC3n3AjfFTRZHQdjCL84bsg) <br/> [PyTorch-G](https://drive.google.com/open?id=1FpdHG2UowDTIepiuOiJOChrtwJSMQJ6N) | [TensorFlow（密码wm2E）](https://pan.iflytek.com:443/link/E5B4E8FE8B22A5FF03184D34CB2F1767) <br/> [PyTorch-D（密码Cch4）](http://pan.iflytek.com:80/link/5AE514A3721E4E75A0E04B8E99BB4098) <br/> [PyTorch-G（密码xCH8）](http://pan.iflytek.com:80/link/CB800D74191E948E06B45238AB797933) | 46M |
+| :------- | :---------: | :---------: | :---------: |
+| **`ELECTRA-180g-large, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1P9yAuW0-HR7WvZ2r2weTnx3slo6f5u9q/view?usp=sharing) | [TensorFlow（密码Yfcy）](http://pan.iflytek.com:80/link/7605874F5A11CD693C60EAB79005CCF3) | 1G |
+| **`ELECTRA-180g-base, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1RlmfBgyEwKVBFagafYvJgyCGuj7cTHfh/view?usp=sharing) | [TensorFlow（密码Xcvm）](http://pan.iflytek.com:80/link/38E14C9BDBE8E93F09DFE2198E308489) | 383M |
+| **`ELECTRA-180g-small-ex, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1NYJTKH1dWzrIBi86VSUK-Ml9Dsso_kuf/view?usp=sharing) | [TensorFlow（密码GUdp）](http://pan.iflytek.com:80/link/3EFCF909FC5CFEA6F0EA7AA774C64CF0) | 92M |
+| **`ELECTRA-180g-small, Chinese`** | [TensorFlow](https://drive.google.com/file/d/177EVNTQpH2BRW-35-0LNLjV86MuDnEmu/view?usp=sharing) | [TensorFlow（密码qsHj）](http://pan.iflytek.com:80/link/D1B8FE678FA5BC31AA43BD99AD09913E) | 46M |
 
-*PyTorch-D: discriminator, PyTorch-G: generator
+#### 基础版（原版，20G数据）
 
-中国大陆境内建议使用讯飞云下载点，境外用户建议使用谷歌下载点。 
-以TensorFlow版`ELECTRA-small, Chinese`为例，下载完毕后对zip文件进行解压得到：
-```
-chinese_electra_small_L-12_H-256_A-4.zip
-    |- checkpoint                           # checkpoint信息
-    |- electra_small.data-00000-of-00001    # 模型权重
-    |- electra_small.meta                   # 模型meta信息
-    |- electra_small.index                  # 模型index信息
-    |- vocab.txt                            # 词表
-```
+| 模型简称 | Google下载 | 讯飞云下载 | 压缩包大小 |
+| :------- | :---------: | :---------: | :---------: |
+| **`ELECTRA-large, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1ny0NMLkEWG6rseDLiF_NujdHxDcIN51m/view?usp=sharing) | （待补充） | 1G |
+| **`ELECTRA-base, Chinese`** | [TensorFlow](https://drive.google.com/open?id=1FMwrs2weFST-iAuZH3umMa6YZVeIP8wD) | [TensorFlow（密码3VQu）](https://pan.iflytek.com:443/link/43B111080BD4A2D3370423912B45491E) | 383M |
+| **`ELECTRA-small-ex, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1LluPORc7xtFmCTFR4IF17q77ip82i7__/view?usp=sharing) | （待补充） | 92M |
+| **`ELECTRA-small, Chinese`** | [TensorFlow](https://drive.google.com/open?id=1uab-9T1kR9HgD2NB0Kz1JB_TdSKgJIds) | [TensorFlow（密码wm2E）](https://pan.iflytek.com:443/link/E5B4E8FE8B22A5FF03184D34CB2F1767) | 46M |
 
-如需PyTorch版本，请自行通过🤗Transformers提供的转换脚本[convert_electra_original_tf_checkpoint_to_pytorch.py](https://github.com/huggingface/transformers/blob/master/src/transformers/convert_electra_original_tf_checkpoint_to_pytorch.py)进行转换。例如，
+### PyTorch版本
+
+如需PyTorch版本，请自行通过🤗Transformers提供的转换脚本[convert_electra_original_tf_checkpoint_to_pytorch.py](https://github.com/huggingface/transformers/blob/master/src/transformers/convert_electra_original_tf_checkpoint_to_pytorch.py)进行转换。如需配置文件可进入到config文件夹中查找。
+
 ```bash
 python transformers/src/transformers/convert_electra_original_tf_checkpoint_to_pytorch.py \
 --tf_checkpoint_path ./path-to-large-model/ \
@@ -97,8 +102,28 @@ python transformers/src/transformers/convert_electra_original_tf_checkpoint_to_p
 --discriminator_or_generator discriminator
 ```
 
+或者通过huggingface官网直接下载PyTorch版权重：https://huggingface.co/hfl
+
+方法：点击任意需要下载的model → 拉到最下方点击"List all files in model" → 在弹出的小框中下载bin和json文件。
+
+### 使用须知
+
+中国大陆境内建议使用讯飞云下载点，境外用户建议使用谷歌下载点。 
+以TensorFlow版`ELECTRA-small, Chinese`为例，下载完毕后对zip文件进行解压得到如下文件。
+
+```
+chinese_electra_small_L-12_H-256_A-4.zip
+    |- electra_small.data-00000-of-00001    # 模型权重
+    |- electra_small.meta                   # 模型meta信息
+    |- electra_small.index                  # 模型index信息
+    |- vocab.txt                            # 词表
+    |- discriminator.json										# 配置文件：discriminator（若没有可从本repo中的config目录获取）
+    |- generator.json												# 配置文件：generator（若没有可从本repo中的config目录获取）
+```
+
 ### 训练细节
-我们采用了大规模中文维基以及通用文本训练了ELECTRA模型，总token数达到5.4B，与[RoBERTa-wwm-ext系列模型](https://github.com/ymcui/Chinese-BERT-wwm)一致。词表方面沿用了谷歌原版BERT的WordPiece词表，包含21128个token。其他细节和超参数如下（未提及的参数保持默认）：
+
+我们采用了大规模中文维基以及通用文本训练了ELECTRA模型，总token数达到5.4B，与[RoBERTa-wwm-ext系列模型](https://github.com/ymcui/Chinese-BERT-wwm)一致。词表方面沿用了谷歌原版BERT的WordPiece词表，包含21,128个token。其他细节和超参数如下（未提及的参数保持默认）：
 - `ELECTRA-large`: 24层，隐层1024，16个注意力头，学习率1e-4，batch96，最大长度512，训练2M步
 - `ELECTRA-base`: 12层，隐层768，12个注意力头，学习率2e-4，batch256，最大长度512，训练1M步
 - `ELECTRA-small-ex`: 24层，隐层256，4个注意力头，学习率5e-4，batch384，最大长度512，训练2M步
@@ -118,6 +143,14 @@ model = AutoModel.from_pretrained(MODEL_NAME)
 
 | 模型名 | 组件 | MODEL_NAME |
 | - | - | - |
+| ELECTRA-180g-large, Chinese | discriminator | hfl/chinese-electra-180g-large-discriminator |
+| ELECTRA-180g-large, Chinese | generator | hfl/chinese-electra-180g-large-generator |
+| ELECTRA-180g-base, Chinese | discriminator | hfl/chinese-electra-180g-base-discriminator |
+| ELECTRA-180g-base, Chinese | generator | hfl/chinese-electra-180g-base-generator |
+| ELECTRA-180g-small-ex, Chinese | discriminator | hfl/chinese-electra-180g-small-ex-discriminator |
+| ELECTRA-180g-small-ex, Chinese | generator | hfl/chinese-electra-180g-small-ex-generator |
+| ELECTRA-180g-small, Chinese | discriminator | hfl/chinese-electra-180g-small-discriminator |
+| ELECTRA-180g-small, Chinese | generator | hfl/chinese-electra-180g-small-generator |
 | ELECTRA-large, Chinese | discriminator | hfl/chinese-electra-large-discriminator |
 | ELECTRA-large, Chinese | generator | hfl/chinese-electra-large-generator |
 | ELECTRA-base, Chinese | discriminator | hfl/chinese-electra-base-discriminator |
@@ -126,7 +159,6 @@ model = AutoModel.from_pretrained(MODEL_NAME)
 | ELECTRA-small-ex, Chinese | generator | hfl/chinese-electra-small-ex-generator |
 | ELECTRA-small, Chinese | discriminator | hfl/chinese-electra-small-discriminator |
 | ELECTRA-small, Chinese | generator | hfl/chinese-electra-small-generator |
-
 
 ### 使用PaddleHub
 依托[PaddleHub](https://github.com/PaddlePaddle/PaddleHub)，我们只需一行代码即可完成模型下载安装，十余行代码即可完成文本分类、序列标注、阅读理解等任务。
@@ -171,9 +203,13 @@ module = hub.Module(name=MODULE_NAME)
 | RoBERTa-wwm-ext | 67.4 (66.5) / 87.2 (86.5) | 72.6 (71.4) / 89.4 (88.8) | 26.2 (24.6) / 51.0 (49.1) | 102M |
 | RBT3 | 57.0 / 79.0 | 62.2 / 81.8 | 14.7 / 36.2 | 38M |
 | **ELECTRA-small** | 63.4 (62.9) / 80.8 (80.2) | 67.8 (67.4) / 83.4 (83.0) | 16.3 (15.4) / 37.2 (35.8) | 12M |
+| **ELECTRA-180g-small** | 63.8 / 82.7 | 68.5 / 85.2 | 15.1 / 35.8 | 12M |
 | **ELECTRA-small-ex** | 66.4 / 82.2 | 71.3 / 85.3 | 18.1 / 38.3 | 25M |
+| **ELECTRA-180g-small-ex** | 68.1 / 85.1 | 71.8 / 87.2 | 20.6 / 41.7 | 25M |
 | **ELECTRA-base** | 68.4 (68.0) / 84.8 (84.6) | 73.1 (72.7) / 87.1 (86.9) | 22.6 (21.7) / 45.0 (43.8) | 102M |
+| **ELECTRA-180g-base** | 69.3 / 87.0 | 73.1 / 88.6 | 24.0 / 48.6 | 102M |
 | **ELECTRA-large** | 69.1 / 85.2 | 73.9 / 87.1 | 23.0 / 44.2 | 324M |
+| **ELECTRA-180g-large** | 68.5 / 86.2 | 73.5 / 88.5 | 21.8 / 42.9 | 324M |
 
 
 ### 繁体中文阅读理解：DRCD
@@ -188,9 +224,13 @@ module = hub.Module(name=MODULE_NAME)
 | RoBERTa-wwm-ext | 86.6 (85.9) / 92.5 (92.2) | 85.6 (85.2) / 92.0 (91.7) | 102M |
 | RBT3 | 76.3 / 84.9 | 75.0 / 83.9 | 38M |
 | **ELECTRA-small** | 79.8 (79.4) / 86.7 (86.4) | 79.0 (78.5) / 85.8 (85.6) | 12M |
+| **ELECTRA-180g-small** | 83.5 / 89.2 | 82.9 / 88.7 | 12M |
 | **ELECTRA-small-ex** | 84.0 / 89.5 | 83.3 / 89.1 | 25M |
+| **ELECTRA-180g-small-ex** | 87.3 / 92.3 | 86.5 / 91.3 | 25M |
 | **ELECTRA-base** | 87.5 (87.0) / 92.5 (92.3) | 86.9 (86.6) / 91.8 (91.7) | 102M |
+| **ELECTRA-180g-base** | 89.6 / 94.2 | 88.9 / 93.7 | 102M |
 | **ELECTRA-large** | 88.8 / 93.3 | 88.8 / 93.6 | 324M |
+| **ELECTRA-180g-large** | 90.1 / 94.8 | 90.5 / 94.7 | 324M |
 
 ### 自然语言推断：XNLI
 在自然语言推断任务中，我们采用了[**XNLI**数据](https://github.com/google-research/bert/blob/master/multilingual.md)，需要将文本分成三个类别：`entailment`，`neutral`，`contradictory`。
@@ -204,9 +244,13 @@ module = hub.Module(name=MODULE_NAME)
 | RoBERTa-wwm-ext | 80.0 (79.2) | 78.8 (78.3) | 102M |
 | RBT3 | 72.2 | 72.3 | 38M |
 | **ELECTRA-small** | 73.3 (72.5) | 73.1 (72.6) | 12M |
+| **ELECTRA-180g-small** | 74.6 | 74.6 | 12M |
 | **ELECTRA-small-ex** | 75.4 | 75.8 | 25M |
+| **ELECTRA-180g-small-ex** | 76.5 | 76.6 | 25M |
 | **ELECTRA-base** | 77.9 (77.0) | 78.4 (77.8) | 102M |
+| **ELECTRA-180g-base** | 79.6 | 79.5 | 102M |
 | **ELECTRA-large** | 81.5 | 81.0 | 324M |
+| **ELECTRA-180g-large** | 81.2 | 80.4 | 324M |
 
 ### 情感分析：ChnSentiCorp
 在情感分析任务中，二分类的情感分类数据集[**ChnSentiCorp**](https://github.com/pengming617/bert_classification)。
@@ -220,9 +264,13 @@ module = hub.Module(name=MODULE_NAME)
 | RoBERTa-wwm-ext | 95.0 (94.6) | 95.6 (94.8) | 102M |
 | RBT3 | 92.8 | 92.8 | 38M |
 | **ELECTRA-small** | 92.8 (92.5) | 94.3 (93.5) | 12M |
+| **ELECTRA-180g-small** | 94.1 | 93.6 | 12M |
 | **ELECTRA-small-ex** | 92.6 | 93.6 | 25M |
+| **ELECTRA-180g-small-ex** | 92.8 | 93.4 | 25M |
 | **ELECTRA-base** | 93.8 (93.0) | 94.5 (93.5) | 102M |
+| **ELECTRA-180g-base** | 94.3 | 94.8 | 102M |
 | **ELECTRA-large** | 95.2 | 95.3 | 324M |
+| **ELECTRA-180g-large** | 94.8 | 95.2 | 324M |
 
 ### 句对分类：LCQMC
 以下两个数据集均需要将一个句对进行分类，判断两个句子的语义是否相同（二分类任务）。
@@ -238,9 +286,13 @@ module = hub.Module(name=MODULE_NAME)
 | RoBERTa-wwm-ext | 89.0 (88.7) | 86.4 (86.1) | 102M |
 | RBT3 | 85.3 | 85.1 | 38M |
 | **ELECTRA-small** | 86.7 (86.3) | 85.9 (85.6) | 12M |
+| **ELECTRA-180g-small** | 86.6 | 85.8 | 12M |
 | **ELECTRA-small-ex** | 87.5 | 86.0 | 25M |
+| **ELECTRA-180g-small-ex** | 87.6 | 86.3 | 25M |
 | **ELECTRA-base** | 90.2 (89.8) | 87.6 (87.3) | 102M |
+| **ELECTRA-180g-base** | 90.2 | 87.1 | 102M |
 | **ELECTRA-large** | 90.7 | 87.3 | 324M |
+| **ELECTRA-180g-large** | 90.3 | 87.3 | 324M |
 
 
 ### 句对分类：BQ Corpus 
@@ -255,9 +307,13 @@ module = hub.Module(name=MODULE_NAME)
 | RoBERTa-wwm-ext | 86.0 (85.4) | 85.0 (84.6) | 102M |
 | RBT3 | 84.1 | 83.3 | 38M |
 | **ELECTRA-small** | 83.5 (83.0) | 82.0 (81.7) | 12M |
+| **ELECTRA-180g-small** | 83.3 | 82.1 | 12M |
 | **ELECTRA-small-ex** | 84.0 | 82.6 | 25M |
+| **ELECTRA-180g-small-ex** | 84.6 | 83.4 | 25M |
 | **ELECTRA-base** | 84.8 (84.7) | 84.5 (84.0) | 102M |
+| **ELECTRA-180g-base** | 85.8 | 84.5 | 102M |
 | **ELECTRA-large** | 86.7 | 85.1 | 324M |
+| **ELECTRA-180g-large** | 86.4 | 85.4 | 324M |
 
 
 ## 使用方法
@@ -342,4 +398,9 @@ A: 敬请关注。
 
 
 ## 问题反馈
-如有问题，请在GitHub Issue中提交。
+Before you submit an issue:
+
+- **You are advised to read [FAQ](https://github.com/ymcui/MacBERT#FAQ) first before you submit an issue.**
+- Repetitive and irrelevant issues will be ignored and closed by [stable-bot](stale · GitHub Marketplace). Thank you for your understanding and support.
+- We cannot acommodate EVERY request, and thus please bare in mind that there is no guarantee that your request will be met.
+- Always be polite when you submit an issue.

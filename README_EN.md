@@ -9,6 +9,7 @@ This project is based on the official code of ELECTRA: [https://github.com/googl
 
 You may also interested in,
 
+- Chinese MacBERT：https://github.com/ymcui/MacBERT
 - Chinese BERT-wwm: https://github.com/ymcui/Chinese-BERT-wwm
 - Chinese XLNet: https://github.com/ymcui/Chinese-XLNet
 - Knowledge Distillation Toolkit - TextBrewer: https://github.com/airaria/TextBrewer
@@ -17,7 +18,9 @@ More resources by HFL: https://github.com/ymcui/HFL-Anthology
 
 
 ## News
-**Sep 15, 2020 Our paper ["Revisiting Pre-Trained Models for Chinese Natural Language Processing"](https://arxiv.org/abs/2004.13922) is accepted to [Findings of EMNLP](https://2020.emnlp.org) as a long paper.**
+**Oct 22, 2020 ELECTRA-180g released with high-quality CommonCrawl data, check [Download](#Download).**
+
+Sep 15, 2020 Our paper ["Revisiting Pre-Trained Models for Chinese Natural Language Processing"](https://arxiv.org/abs/2004.13922) is accepted to [Findings of EMNLP](https://2020.emnlp.org) as a long paper.
 
 August 27, 2020 We are happy to announce that our model is on top of GLUE benchmark, check [leaderboard](https://gluebenchmark.com/leaderboard).
 
@@ -62,15 +65,41 @@ We provide TensorFlow models at the moment.
 * **`ELECTRA-small-ex, Chinese`**: 24-layer, 256-hidden, 4-heads, 25M parameters
 * **`ELECTRA-small, Chinese`**: 12-layer, 256-hidden, 4-heads, 12M parameters
 
+#### New Version (180G data)
+
 | Model | Google Drive | iFLYTEK Cloud | Size |
-| :------- | :--------- | :---------: | :---------: |
-| **`ELECTRA-large, Chinese (new)`** | [TensorFlow+config](https://drive.google.com/file/d/1ny0NMLkEWG6rseDLiF_NujdHxDcIN51m/view?usp=sharing) | N/A | 1G |
-| **`ELECTRA-small-ex, Chinese (new)`** | [TensorFlow+config](https://drive.google.com/file/d/1LluPORc7xtFmCTFR4IF17q77ip82i7__/view?usp=sharing) | N/A | 92M |
-| **`ELECTRA-base, Chinese`** | [TensorFlow](https://drive.google.com/open?id=1FMwrs2weFST-iAuZH3umMa6YZVeIP8wD) <br/> [PyTorch-D](https://drive.google.com/open?id=1iBanmudRHLm3b4X4kL_FxccurDjL4RYe) <br/> [PyTorch-G](https://drive.google.com/open?id=1x-fcgS9GU8X51H1FFiqkh0RIDMGTTX7c) | [TensorFlow (pw:3VQu)](https://pan.iflytek.com:443/link/43B111080BD4A2D3370423912B45491E) <br/> [PyTorch-D (pw:WQ8r)](http://pan.iflytek.com:80/link/31F0C2FB919C6099DEC72FD72C0AFCFB) <br/> [PyTorch-G (pw:XxnY)](http://pan.iflytek.com:80/link/2DD6237FE1B99ECD81F775FC2C272149)| 383M |
-| **`ELECTRA-small, Chinese`** | [TensorFlow](https://drive.google.com/open?id=1uab-9T1kR9HgD2NB0Kz1JB_TdSKgJIds) <br/> [PyTorch-D](https://drive.google.com/open?id=1A1wdw41kOFC3n3AjfFTRZHQdjCL84bsg) <br/> [PyTorch-G](https://drive.google.com/open?id=1FpdHG2UowDTIepiuOiJOChrtwJSMQJ6N) | [TensorFlow (pw:wm2E)](https://pan.iflytek.com:443/link/E5B4E8FE8B22A5FF03184D34CB2F1767) <br/> [PyTorch-D (pw:Cch4)](http://pan.iflytek.com:80/link/5AE514A3721E4E75A0E04B8E99BB4098) <br/> [PyTorch-G (pw:xCH8)](http://pan.iflytek.com:80/link/CB800D74191E948E06B45238AB797933) | 46M |
+| :------- | :---------: | :---------: | :---------: |
+| **`ELECTRA-180g-large, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1P9yAuW0-HR7WvZ2r2weTnx3slo6f5u9q/view?usp=sharing) | [TensorFlow（pw:Yfcy）](http://pan.iflytek.com:80/link/7605874F5A11CD693C60EAB79005CCF3) | 1.2G |
+| **`ELECTRA-180g-base, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1RlmfBgyEwKVBFagafYvJgyCGuj7cTHfh/view?usp=sharing) | [TensorFlow（pw:Xcvm）](http://pan.iflytek.com:80/link/38E14C9BDBE8E93F09DFE2198E308489) | 383M |
+| **`ELECTRA-180g-small-ex, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1NYJTKH1dWzrIBi86VSUK-Ml9Dsso_kuf/view?usp=sharing) | [TensorFlow（pw:GUdp）](http://pan.iflytek.com:80/link/3EFCF909FC5CFEA6F0EA7AA774C64CF0) | 92M |
+| **`ELECTRA-180g-small, Chinese`** | [TensorFlow](https://drive.google.com/file/d/177EVNTQpH2BRW-35-0LNLjV86MuDnEmu/view?usp=sharing) | [TensorFlow（pw:qsHj）](http://pan.iflytek.com:80/link/D1B8FE678FA5BC31AA43BD99AD09913E) | 46M |
 
-*PyTorch-D: discriminator, PyTorch-G: generator
+#### Basic Version (20G data)
 
+| Model | Google Drive | iFLYTEK Cloud | Size |
+| :------- | :---------: | :---------: | :---------: |
+| **`ELECTRA-large, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1ny0NMLkEWG6rseDLiF_NujdHxDcIN51m/view?usp=sharing) | （TBA） | 1G |
+| **`ELECTRA-base, Chinese`** | [TensorFlow](https://drive.google.com/open?id=1FMwrs2weFST-iAuZH3umMa6YZVeIP8wD) | [TensorFlow（pw:3VQu）](https://pan.iflytek.com:443/link/43B111080BD4A2D3370423912B45491E) | 383M |
+| **`ELECTRA-small-ex, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1LluPORc7xtFmCTFR4IF17q77ip82i7__/view?usp=sharing) | （TBA） | 92M |
+| **`ELECTRA-small, Chinese`** | [TensorFlow](https://drive.google.com/open?id=1uab-9T1kR9HgD2NB0Kz1JB_TdSKgJIds) | [TensorFlow（pw:wm2E）](https://pan.iflytek.com:443/link/E5B4E8FE8B22A5FF03184D34CB2F1767) | 46M |
+
+### PyTorch Version
+If you need these models in PyTorch,
+
+1) Convert TensorFlow checkpoint into PyTorch, using [🤗Transformers](https://github.com/huggingface/transformers). Please use the script [convert_electra_original_tf_checkpoint_to_pytorch.py](https://github.com/huggingface/transformers/blob/master/src/transformers/convert_electra_original_tf_checkpoint_to_pytorch.py) provided by 🤗Transformers. For example,
+```bash
+python transformers/src/transformers/convert_electra_original_tf_checkpoint_to_pytorch.py \
+--tf_checkpoint_path ./path-to-large-model/ \
+--config_file ./path-to-large-model/discriminator.json \
+--pytorch_dump_path ./path-to-output/model.bin \
+--discriminator_or_generator discriminator
+```
+
+2) Download from https://huggingface.co/hfl
+
+Steps: select one of the model in the page above → click "list all files in model" at the end of the model page → download bin/json files from the pop-up window
+
+### Note
 The users from Mainland China are encouraged to use iFLYTEK Cloud download links, and the others may use Google Drive links.
 The ZIP package includes the following files (For example, `ELECTRA-small, Chinese`):
 ```
@@ -82,14 +111,6 @@ chinese_electra_small_L-12_H-256_A-4.zip
     |- vocab.txt                            # Vocabulary
 ```
 
-For Pytorch version weights, please use the script [convert_electra_original_tf_checkpoint_to_pytorch.py](https://github.com/huggingface/transformers/blob/master/src/transformers/convert_electra_original_tf_checkpoint_to_pytorch.py) provided by 🤗Transformers. For example,
-```bash
-python transformers/src/transformers/convert_electra_original_tf_checkpoint_to_pytorch.py \
---tf_checkpoint_path ./path-to-large-model/ \
---config_file ./path-to-large-model/discriminator.json \
---pytorch_dump_path ./path-to-output/model.bin \
---discriminator_or_generator discriminator
-```
 
 ### Training Details
 We use the same data for training [RoBERTa-wwm-ext model series](https://github.com/ymcui/Chinese-BERT-wwm), which includes 5.4B tokens.
@@ -114,6 +135,14 @@ The actual model and its `MODEL_NAME` are listed below.
 
 | Original Model | Component | MODEL_NAME |
 | - | - | - |
+| ELECTRA-180g-large, Chinese | discriminator | hfl/chinese-electra-180g-large-discriminator |
+| ELECTRA-180g-large, Chinese | generator | hfl/chinese-electra-180g-large-generator |
+| ELECTRA-180g-base, Chinese | discriminator | hfl/chinese-electra-180g-base-discriminator |
+| ELECTRA-180g-base, Chinese | generator | hfl/chinese-electra-180g-base-generator |
+| ELECTRA-180g-small-ex, Chinese | discriminator | hfl/chinese-electra-180g-small-ex-discriminator |
+| ELECTRA-180g-small-ex, Chinese | generator | hfl/chinese-electra-180g-small-ex-generator |
+| ELECTRA-180g-small, Chinese | discriminator | hfl/chinese-electra-180g-small-discriminator |
+| ELECTRA-180g-small, Chinese | generator | hfl/chinese-electra-180g-small-generator |
 | ELECTRA-large, Chinese | discriminator | hfl/chinese-electra-large-discriminator |
 | ELECTRA-large, Chinese | generator | hfl/chinese-electra-large-generator |
 | ELECTRA-base, Chinese | discriminator | hfl/chinese-electra-base-discriminator |
@@ -164,9 +193,13 @@ To ensure the stability of the results, we run 10 times for each experiment and 
 | RoBERTa-wwm-ext | 67.4 (66.5) / 87.2 (86.5) | 72.6 (71.4) / 89.4 (88.8) | 26.2 (24.6) / 51.0 (49.1) | 102M |
 | RBT3 | 57.0 / 79.0 | 62.2 / 81.8 | 14.7 / 36.2 | 38M |
 | **ELECTRA-small** | 63.4 (62.9) / 80.8 (80.2) | 67.8 (67.4) / 83.4 (83.0) | 16.3 (15.4) / 37.2 (35.8) | 12M |
+| **ELECTRA-180g-small** | 63.8 / 82.7 | 68.5 / 85.2 | 15.1 / 35.8 | 12M |
 | **ELECTRA-small-ex** | 66.4 / 82.2 | 71.3 / 85.3 | 18.1 / 38.3 | 25M |
+| **ELECTRA-180g-small-ex** | 68.1 / 85.1 | 71.8 / 87.2 | 20.6 / 41.7 | 25M |
 | **ELECTRA-base** | 68.4 (68.0) / 84.8 (84.6) | 73.1 (72.7) / 87.1 (86.9) | 22.6 (21.7) / 45.0 (43.8) | 102M |
+| **ELECTRA-180g-base** | 69.3 / 87.0 | 73.1 / 88.6 | 24.0 / 48.6 | 102M |
 | **ELECTRA-large** | 69.1 / 85.2 | 73.9 / 87.1 | 23.0 / 44.2 | 324M |
+| **ELECTRA-180g-large** | 68.5 / 86.2 | 73.5 / 88.5 | 21.8 / 42.9 | 324M |
 
 ### DRCD
 [DRCD](https://github.com/DRCKnowledgeTeam/DRCD) is also a span-extraction machine reading comprehension dataset, released by Delta Research Center. The text is written in Traditional Chinese. Evaluation metrics: EM / F1
@@ -179,9 +212,13 @@ To ensure the stability of the results, we run 10 times for each experiment and 
 | RoBERTa-wwm-ext | 86.6 (85.9) / 92.5 (92.2) | 85.6 (85.2) / 92.0 (91.7) | 102M |
 | RBT3 | 76.3 / 84.9 | 75.0 / 83.9 | 38M |
 | **ELECTRA-small** | 79.8 (79.4) / 86.7 (86.4) | 79.0 (78.5) / 85.8 (85.6) | 12M |
+| **ELECTRA-180g-small** | 83.5 / 89.2 | 82.9 / 88.7 | 12M |
 | **ELECTRA-small-ex** | 84.0 / 89.5 | 83.3 / 89.1 | 25M |
+| **ELECTRA-180g-small-ex** | 87.3 / 92.3 | 86.5 / 91.3 | 25M |
 | **ELECTRA-base** | 87.5 (87.0) / 92.5 (92.3) | 86.9 (86.6) / 91.8 (91.7) | 102M |
+| **ELECTRA-180g-base** | 89.6 / 94.2 | 88.9 / 93.7 | 102M |
 | **ELECTRA-large** | 88.8 / 93.3 | 88.8 / 93.6 | 324M |
+| **ELECTRA-180g-large** | 90.1 / 94.8 | 90.5 / 94.7 | 324M |
 
 ### XNLI
 We use [XNLI](https://github.com/google-research/bert/blob/master/multilingual.md) data for testing the NLI task. Evaluation metrics: Accuracy
@@ -194,9 +231,14 @@ We use [XNLI](https://github.com/google-research/bert/blob/master/multilingual.m
 | RoBERTa-wwm-ext | 80.0 (79.2) | 78.8 (78.3) | 102M |
 | RBT3 | 72.2 | 72.3 | 38M |
 | **ELECTRA-small** | 73.3 (72.5) | 73.1 (72.6) | 12M |
+| **ELECTRA-180g-small** | 74.6 | 74.6 | 12M |
 | **ELECTRA-small-ex** | 75.4 | 75.8 | 25M |
+| **ELECTRA-180g-small-ex** | 76.5 | 76.6 | 25M |
 | **ELECTRA-base** | 77.9 (77.0) | 78.4 (77.8) | 102M |
+| **ELECTRA-180g-base** | 79.6 | 79.5 | 102M |
 | **ELECTRA-large** | 81.5 | 81.0 | 324M |
+| **ELECTRA-180g-large** | 81.2 | 80.4 | 324M |
+
 
 ### ChnSentiCorp
 We use [ChnSentiCorp](https://github.com/pengming617/bert_classification) data for testing sentiment analysis. Evaluation metrics: Accuracy
@@ -209,9 +251,14 @@ We use [ChnSentiCorp](https://github.com/pengming617/bert_classification) data f
 | RoBERTa-wwm-ext | 95.0 (94.6) | 95.6 (94.8) | 102M |
 | RBT3 | 92.8 | 92.8 | 38M |
 | **ELECTRA-small** | 92.8 (92.5) | 94.3 (93.5) | 12M |
+| **ELECTRA-180g-small** | 94.1 | 93.6 | 12M |
 | **ELECTRA-small-ex** | 92.6 | 93.6 | 25M |
+| **ELECTRA-180g-small-ex** | 92.8 | 93.4 | 25M |
 | **ELECTRA-base** | 93.8 (93.0) | 94.5 (93.5) | 102M |
+| **ELECTRA-180g-base** | 94.3 | 94.8 | 102M |
 | **ELECTRA-large** | 95.2 | 95.3 | 324M |
+| **ELECTRA-180g-large** | 94.8 | 95.2 | 324M |
+
 
 ### LCQMC
 [**LCQMC**](http://icrc.hitsz.edu.cn/info/1037/1146.htm) is a sentence pair matching dataset, which could be seen as a binary classification task. Evaluation metrics: Accuracy
@@ -224,10 +271,13 @@ We use [ChnSentiCorp](https://github.com/pengming617/bert_classification) data f
 | RoBERTa-wwm-ext | 89.0 (88.7) | 86.4 (86.1) | 102M |
 | RBT3 | 85.3 | 85.1 | 38M |
 | **ELECTRA-small** | 86.7 (86.3) | 85.9 (85.6) | 12M |
+| **ELECTRA-180g-small** | 86.6 | 85.8 | 12M |
 | **ELECTRA-small-ex** | 87.5 | 86.0 | 25M |
+| **ELECTRA-180g-small-ex** | 87.6 | 86.3 | 25M |
 | **ELECTRA-base** | 90.2 (89.8) | 87.6 (87.3) | 102M |
+| **ELECTRA-180g-base** | 90.2 | 87.1 | 102M |
 | **ELECTRA-large** | 90.7 | 87.3 | 324M |
-
+| **ELECTRA-180g-large** | 90.3 | 87.3 | 324M |
 
 ### BQ Corpus 
 [**BQ Corpus**](http://icrc.hitsz.edu.cn/Article/show/175.html) is a sentence pair matching dataset, which could be seen as a binary classification task. Evaluation metrics: Accuracy
@@ -240,9 +290,14 @@ We use [ChnSentiCorp](https://github.com/pengming617/bert_classification) data f
 | RoBERTa-wwm-ext | 86.0 (85.4) | 85.0 (84.6) | 102M |
 | RBT3 | 84.1 | 83.3 | 38M |
 | **ELECTRA-small** | 83.5 (83.0) | 82.0 (81.7) | 12M |
+| **ELECTRA-180g-small** | 83.3 | 82.1 | 12M |
 | **ELECTRA-small-ex** | 84.0 | 82.6 | 25M |
+| **ELECTRA-180g-small-ex** | 84.6 | 83.4 | 25M |
 | **ELECTRA-base** | 84.8 (84.7) | 84.5 (84.0) | 102M |
+| **ELECTRA-180g-base** | 85.8 | 84.5 | 102M |
 | **ELECTRA-large** | 86.7 | 85.1 | 324M |
+| **ELECTRA-180g-large** | 86.4 | 85.4 | 324M |
+
 
 
 ## Usage
@@ -327,4 +382,9 @@ Follow our official WeChat account to keep updated with our latest technologies!
 
 
 ## Issues
-If there is any problem, please submit a GitHub Issue.
+Before you submit an issue:
+
+- **You are advised to read [FAQ](https://github.com/ymcui/MacBERT#FAQ) first before you submit an issue.**
+- Repetitive and irrelevant issues will be ignored and closed by [stable-bot](stale · GitHub Marketplace). Thank you for your understanding and support.
+- We cannot acommodate EVERY request, and thus please bare in mind that there is no guarantee that your request will be met.
+- Always be polite when you submit an issue.
