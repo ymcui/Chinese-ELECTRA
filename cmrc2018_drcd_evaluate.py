@@ -29,7 +29,7 @@ def mixed_segmentation(in_str, rm_punc=False):
 	for char in in_str:
 		if rm_punc and char in sp_char:
 			continue
-		if re.search(ur'[\u4e00-\u9fa5]', char) or char in sp_char:
+		if re.search(u'[\u4e00-\u9fa5]', char) or char in sp_char:
 			if temp_str != "":
 				ss = nltk.word_tokenize(temp_str)
 				segs_out.extend(ss)
