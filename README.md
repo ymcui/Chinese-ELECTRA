@@ -26,11 +26,16 @@
 查看更多哈工大讯飞联合实验室（HFL）发布的资源：https://github.com/ymcui/HFL-Anthology
 
 ## 新闻
-**2020/10/22 ELECTRA-180g已发布，增加了CommonCrawl的高质量数据，查看[模型下载](#模型下载)**。
+**2020/12/13 基于大规模法律文书数据，我们训练了面向司法领域的中文ELECTRA系列模型，查看[模型下载](#模型下载)，[司法任务效果](#司法任务效果)。**
+
+2020/10/22 ELECTRA-180g已发布，增加了CommonCrawl的高质量数据，查看[模型下载](#模型下载)。
 
 2020/9/15 我们的论文["Revisiting Pre-Trained Models for Chinese Natural Language Processing"](https://arxiv.org/abs/2004.13922)被[Findings of EMNLP](https://2020.emnlp.org)录用为长文。
 
 2020/8/27 哈工大讯飞联合实验室在通用自然语言理解评测GLUE中荣登榜首，查看[GLUE榜单](https://gluebenchmark.com/leaderboard)，[新闻](http://dwz.date/ckrD)。
+
+<details>
+<summary>点击这里查看历史新闻</summary>
 
 2020/5/29 Chinese ELECTRA-large/small-ex已发布，请查看[模型下载](#模型下载)，目前只提供Google Drive下载地址，敬请谅解。
 
@@ -39,6 +44,7 @@
 2020/3/31 本目录发布的模型已接入[飞桨PaddleHub](https://github.com/PaddlePaddle/PaddleHub)，查看[快速加载](#快速加载)。
 
 2020/3/25 Chinese ELECTRA-small/base已发布，请查看[模型下载](#模型下载)。
+</details>
 
 ## 内容导引
 | 章节 | 描述 |
@@ -90,9 +96,18 @@
 | **`ELECTRA-small-ex, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1LluPORc7xtFmCTFR4IF17q77ip82i7__/view?usp=sharing) | （待补充） | 92M |
 | **`ELECTRA-small, Chinese`** | [TensorFlow](https://drive.google.com/open?id=1uab-9T1kR9HgD2NB0Kz1JB_TdSKgJIds) | [TensorFlow（密码wm2E）](https://pan.iflytek.com:443/link/E5B4E8FE8B22A5FF03184D34CB2F1767) | 46M |
 
-### PyTorch版本
+#### 司法领域版（new）
 
-如需PyTorch版本，请自行通过🤗Transformers提供的转换脚本[convert_electra_original_tf_checkpoint_to_pytorch.py](https://github.com/huggingface/transformers/blob/master/src/transformers/convert_electra_original_tf_checkpoint_to_pytorch.py)进行转换。如需配置文件可进入到config文件夹中查找。
+| 模型简称 | Google下载 | 讯飞云下载 | 压缩包大小 |
+| :------- | :---------: | :---------: | :---------: |
+| **`legal-ELECTRA-large, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1jPyVi_t4QmTkFy7PD-m-hG-lQ8cIETzD/view?usp=sharing) | [TensorFlow（密码7f7b）](http://pan.iflytek.com:80/#/link/CC111ED9B1D4AE7E26C69A520A6D8759) | 1G |
+| **`legal-ELECTRA-base, Chinese`** | [TensorFlow](https://drive.google.com/file/d/12ZLaoFgpqGJxSi_9KiQV-jdVN4XRGMiD/view?usp=sharing) | [TensorFlow（密码7f7b）](http://pan.iflytek.com:80/#/link/CC111ED9B1D4AE7E26C69A520A6D8759) | 383M |
+| **`legal-ELECTRA-small, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1arQ5qNTNoc1OyMH8wBUKdTMy2QponIFY/view?usp=sharing) | [TensorFlow（密码7f7b）](http://pan.iflytek.com:80/#/link/CC111ED9B1D4AE7E26C69A520A6D8759) | 46M |
+
+
+### PyTorch/TF2版本
+
+如需PyTorch版本，请自行通过🤗Transformers提供的转换脚本[convert_electra_original_tf_checkpoint_to_pytorch.py](https://github.com/huggingface/transformers/blob/master/src/transformers/convert_electra_original_tf_checkpoint_to_pytorch.py)进行转换。如需配置文件可进入到本目录下的config文件夹中查找。
 
 ```bash
 python transformers/src/transformers/convert_electra_original_tf_checkpoint_to_pytorch.py \
@@ -117,8 +132,8 @@ chinese_electra_small_L-12_H-256_A-4.zip
     |- electra_small.meta                   # 模型meta信息
     |- electra_small.index                  # 模型index信息
     |- vocab.txt                            # 词表
-    |- discriminator.json										# 配置文件：discriminator（若没有可从本repo中的config目录获取）
-    |- generator.json												# 配置文件：generator（若没有可从本repo中的config目录获取）
+    |- discriminator.json                   # 配置文件：discriminator（若没有可从本repo中的config目录获取）
+    |- generator.json                       # 配置文件：generator（若没有可从本repo中的config目录获取）
 ```
 
 ### 训练细节
@@ -159,6 +174,18 @@ model = AutoModel.from_pretrained(MODEL_NAME)
 | ELECTRA-small-ex, Chinese | generator | hfl/chinese-electra-small-ex-generator |
 | ELECTRA-small, Chinese | discriminator | hfl/chinese-electra-small-discriminator |
 | ELECTRA-small, Chinese | generator | hfl/chinese-electra-small-generator |
+
+司法领域版本：
+
+| 模型名 | 组件 | MODEL_NAME |
+| - | - | - |
+| legal-ELECTRA-large, Chinese | discriminator | hfl/chinese-legal-electra-large-discriminator |
+| legal-ELECTRA-large, Chinese | generator | hfl/chinese-legal-electra-large-generator |
+| legal-ELECTRA-base, Chinese | discriminator | hfl/chinese-legal-electra-base-discriminator |
+| legal-ELECTRA-base, Chinese | generator | hfl/chinese-legal-electra-base-generator |å
+| legal-ELECTRA-small, Chinese | discriminator | hfl/chinese-legal-electra-small-discriminator |
+| legal-ELECTRA-small, Chinese | generator | hfl/chinese-legal-electra-small-generator |
+
 
 ### 使用PaddleHub
 依托[PaddleHub](https://github.com/PaddlePaddle/PaddleHub)，我们只需一行代码即可完成模型下载安装，十余行代码即可完成文本分类、序列标注、阅读理解等任务。
@@ -314,6 +341,20 @@ module = hub.Module(name=MODULE_NAME)
 | **ELECTRA-180g-base** | 85.8 | 84.5 | 102M |
 | **ELECTRA-large** | 86.7 | 85.1 | 324M |
 | **ELECTRA-180g-large** | 86.4 | 85.4 | 324M |
+
+
+### 司法任务效果
+我们使用CAIL 2018司法评测的[罪名预测数据](https://github.com/liuhuanyong/CrimeKgAssitant)对司法ELECTRA进行了测试。small/base/large学习率分别为：5e-4/3e-4/1e-4。
+评价指标为：Accuracy
+
+| 模型 | 开发集 | 测试集 | 参数量 |
+| :------- | :---------: | :---------: | :---------: |
+| ELECTRA-small | 78.84 | 76.35 | 12M |
+| **legal-ELECTRA-small** | **79.60** | **77.03** | 12M |
+| ELECTRA-base | 80.94 | 78.41 | 102M |
+| **legal-ELECTRA-base** | **81.71** | **79.17** | 102M |
+| ELECTRA-large | 81.53 | 78.97 | 324M |
+| **legal-ELECTRA-large** | **82.60** | **79.89** | 324M |
 
 
 ## 使用方法
