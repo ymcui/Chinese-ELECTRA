@@ -18,7 +18,9 @@ More resources by HFL: https://github.com/ymcui/HFL-Anthology
 
 
 ## News
-**Oct 22, 2020 ELECTRA-180g released with high-quality CommonCrawl data, check [Download](#Download).**
+**Dec 13, 2020 We release Chinese legal ELECTRA series, check [Download](#Download), [Results for Crime Prediction](#Results-for-Crime-Prediction).**
+
+Oct 22, 2020 ELECTRA-180g released, which were trained with high-quality CommonCrawl data, check [Download](#Download).
 
 Sep 15, 2020 Our paper ["Revisiting Pre-Trained Models for Chinese Natural Language Processing"](https://arxiv.org/abs/2004.13922) is accepted to [Findings of EMNLP](https://2020.emnlp.org) as a long paper.
 
@@ -65,6 +67,7 @@ We provide TensorFlow models at the moment.
 * **`ELECTRA-small-ex, Chinese`**: 24-layer, 256-hidden, 4-heads, 25M parameters
 * **`ELECTRA-small, Chinese`**: 12-layer, 256-hidden, 4-heads, 12M parameters
 
+
 #### New Version (180G data)
 
 | Model | Google Drive | iFLYTEK Cloud | Size |
@@ -82,6 +85,15 @@ We provide TensorFlow models at the moment.
 | **`ELECTRA-base, Chinese`** | [TensorFlow](https://drive.google.com/open?id=1FMwrs2weFST-iAuZH3umMa6YZVeIP8wD) | [TensorFlow（pw:3VQu）](https://pan.iflytek.com:443/link/43B111080BD4A2D3370423912B45491E) | 383M |
 | **`ELECTRA-small-ex, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1LluPORc7xtFmCTFR4IF17q77ip82i7__/view?usp=sharing) | （TBA） | 92M |
 | **`ELECTRA-small, Chinese`** | [TensorFlow](https://drive.google.com/open?id=1uab-9T1kR9HgD2NB0Kz1JB_TdSKgJIds) | [TensorFlow（pw:wm2E）](https://pan.iflytek.com:443/link/E5B4E8FE8B22A5FF03184D34CB2F1767) | 46M |
+
+#### Legal Version (new)
+
+| Model | Google Drive | iFLYTEK Cloud | Size |
+| :------- | :---------: | :---------: | :---------: |
+| **`legal-ELECTRA-large, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1jPyVi_t4QmTkFy7PD-m-hG-lQ8cIETzD/view?usp=sharing) | [TensorFlow（pw:7f7b）](http://pan.iflytek.com:80/#/link/CC111ED9B1D4AE7E26C69A520A6D8759) | 1G |
+| **`legal-ELECTRA-base, Chinese`** | [TensorFlow](https://drive.google.com/file/d/12ZLaoFgpqGJxSi_9KiQV-jdVN4XRGMiD/view?usp=sharing) | [TensorFlow（pw:7f7b）](http://pan.iflytek.com:80/#/link/CC111ED9B1D4AE7E26C69A520A6D8759) | 383M |
+| **`legal-ELECTRA-small, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1arQ5qNTNoc1OyMH8wBUKdTMy2QponIFY/view?usp=sharing) | [TensorFlow（pw:7f7b）](http://pan.iflytek.com:80/#/link/CC111ED9B1D4AE7E26C69A520A6D8759) | 46M |
+
 
 ### PyTorch Version
 If you need these models in PyTorch,
@@ -152,6 +164,18 @@ The actual model and its `MODEL_NAME` are listed below.
 | ELECTRA-small, Chinese | discriminator | hfl/chinese-electra-small-discriminator |
 | ELECTRA-small, Chinese | generator | hfl/chinese-electra-small-generator |
 
+Legal Version：
+
+| Original Model | Component | MODEL_NAME |
+| - | - | - |
+| legal-ELECTRA-large, Chinese | discriminator | hfl/chinese-legal-electra-large-discriminator |
+| legal-ELECTRA-large, Chinese | generator | hfl/chinese-legal-electra-large-generator |
+| legal-ELECTRA-base, Chinese | discriminator | hfl/chinese-legal-electra-base-discriminator |
+| legal-ELECTRA-base, Chinese | generator | hfl/chinese-legal-electra-base-generator |å
+| legal-ELECTRA-small, Chinese | discriminator | hfl/chinese-legal-electra-small-discriminator |
+| legal-ELECTRA-small, Chinese | generator | hfl/chinese-legal-electra-small-generator |
+
+
 
 ### PaddleHub
 With [PaddleHub](https://github.com/PaddlePaddle/PaddleHub), we can download and install the model with one line of code.
@@ -221,7 +245,7 @@ To ensure the stability of the results, we run 10 times for each experiment and 
 | **ELECTRA-180g-large** | 90.1 / 94.8 | 90.5 / 94.7 | 324M |
 
 ### XNLI
-We use [XNLI](https://github.com/google-research/bert/blob/master/multilingual.md) data for testing the NLI task. Evaluation metrics: Accuracy
+We use [XNLI](https://github.com/google-research/bert/blob/master/multilingual.md) data for testing the NLI task. Evaluation metric: Accuracy
 
 | Model | Development | Test | #Params |
 | :------- | :---------: | :---------: | :---------: |
@@ -241,7 +265,7 @@ We use [XNLI](https://github.com/google-research/bert/blob/master/multilingual.m
 
 
 ### ChnSentiCorp
-We use [ChnSentiCorp](https://github.com/pengming617/bert_classification) data for testing sentiment analysis. Evaluation metrics: Accuracy
+We use [ChnSentiCorp](https://github.com/pengming617/bert_classification) data for testing sentiment analysis. Evaluation metric: Accuracy
 
 | Model | Development | Test | #Params |
 | :------- | :---------: | :---------: | :---------: |
@@ -261,7 +285,7 @@ We use [ChnSentiCorp](https://github.com/pengming617/bert_classification) data f
 
 
 ### LCQMC
-[**LCQMC**](http://icrc.hitsz.edu.cn/info/1037/1146.htm) is a sentence pair matching dataset, which could be seen as a binary classification task. Evaluation metrics: Accuracy
+[**LCQMC**](http://icrc.hitsz.edu.cn/info/1037/1146.htm) is a sentence pair matching dataset, which could be seen as a binary classification task. Evaluation metric: Accuracy
 
 | Model | Development | Test | #Params |
 | :------- | :---------: | :---------: | :---------: |
@@ -280,7 +304,7 @@ We use [ChnSentiCorp](https://github.com/pengming617/bert_classification) data f
 | **ELECTRA-180g-large** | 90.3 | 87.3 | 324M |
 
 ### BQ Corpus 
-[**BQ Corpus**](http://icrc.hitsz.edu.cn/Article/show/175.html) is a sentence pair matching dataset, which could be seen as a binary classification task. Evaluation metrics: Accuracy
+[**BQ Corpus**](http://icrc.hitsz.edu.cn/Article/show/175.html) is a sentence pair matching dataset, which could be seen as a binary classification task. Evaluation metric: Accuracy
 
 | Model | Development | Test | #Params |
 | :------- | :---------: | :---------: | :---------: |
@@ -298,6 +322,19 @@ We use [ChnSentiCorp](https://github.com/pengming617/bert_classification) data f
 | **ELECTRA-large** | 86.7 | 85.1 | 324M |
 | **ELECTRA-180g-large** | 86.4 | 85.4 | 324M |
 
+
+### Results for Crime Prediction
+We adopt CAIL 2018 [crime prediction](https://github.com/liuhuanyong/CrimeKgAssitant) to evaluate the performance of legal ELECTRA. Initial learning rates for small/base/large are 5e-4/3e-4/1e-4.
+Evaluation metric: Accuracy
+
+| Model | Development | Test | #Params |
+| :------- | :---------: | :---------: | :---------: |
+| ELECTRA-small | 78.84 | 76.35 | 12M |
+| **legal-ELECTRA-small** | **79.60** | **77.03** | 12M |
+| ELECTRA-base | 80.94 | 78.41 | 102M |
+| **legal-ELECTRA-base** | **81.71** | **79.17** | 102M |
+| ELECTRA-large | 81.53 | 78.97 | 324M |
+| **legal-ELECTRA-large** | **82.60** | **79.89** | 324M |
 
 
 ## Usage
