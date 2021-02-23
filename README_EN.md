@@ -352,7 +352,7 @@ The folder should contain five files, including `electra_model.*`, `vocab.txt`, 
 
 ### Step 2: Prepare for task data
 Download [CMRC 2018 training and development data](https://github.com/ymcui/cmrc2018/tree/master/squad-style-data), and rename them as `train.json`, `dev.json`.
-Put two files into `${data-dir}/models/${task-name}` directory.
+Put two files into `${data-dir}/finetuning_data/${task-name}` directory.
 
 ### Step 3: Run command
 ```shell

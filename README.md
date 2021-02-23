@@ -372,7 +372,7 @@ module = hub.Module(name=MODULE_NAME)
 
 ### 第二步：准备任务数据
 下载[CMRC 2018训练集和开发集](https://github.com/ymcui/cmrc2018/tree/master/squad-style-data)，并重命名为`train.json`和`dev.json`。
-将两个文件放到`${data-dir}/models/${task-name}`。
+将两个文件放到`${data-dir}/finetuning_data/${task-name}`。
 
 ### 第三步：运行训练命令
 ```shell
