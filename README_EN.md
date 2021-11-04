@@ -399,8 +399,19 @@ A: I am sorry that it is not possible.
 A: Stay tuned!
 
 ## Citation
-If you find the technical report or resource is useful, please cite the following technical report in your paper.
-- https://arxiv.org/abs/2004.13922
+If you find the technical report or resource is useful, please cite our work in your paper.
+- Primary: https://ieeexplore.ieee.org/document/9599397  
+```
+@journal{cui-etal-2021-pretrain,
+  title={Pre-Training with Whole Word Masking for Chinese BERT},
+  author={Cui, Yiming and Che, Wanxiang and Liu, Ting and Qin, Bing and Yang, Ziqing},
+  journal={IEEE Transactions on Audio, Speech and Language Processing},
+  year={2021},
+  url={https://ieeexplore.ieee.org/document/9599397},
+  doi={10.1109/TASLP.2021.3124365},
+ }
+```
+- Secondary: https://arxiv.org/abs/2004.13922  
 ```
 @inproceedings{cui-etal-2020-revisiting,
     title = "Revisiting Pre-Trained Models for {C}hinese Natural Language Processing",
@@ -419,7 +430,6 @@ If you find the technical report or resource is useful, please cite the followin
     pages = "657--668",
 }
 ```
-
 
 ## Follow us
 Follow our official WeChat account to keep updated with our latest technologies!
