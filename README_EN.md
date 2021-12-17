@@ -13,12 +13,16 @@ You may also interested in,
 - Chinese BERT-wwm: https://github.com/ymcui/Chinese-BERT-wwm
 - Chinese XLNet: https://github.com/ymcui/Chinese-XLNet
 - Knowledge Distillation Toolkit - TextBrewer: https://github.com/airaria/TextBrewer
+- Model Pruning Toolkit - TextPruner: https://github.com/airaria/TextPruner
 
 More resources by HFL: https://github.com/ymcui/HFL-Anthology
 
 
 ## News
-**Dec 13, 2020 We release Chinese legal ELECTRA series, check [Download](#Download), [Results for Crime Prediction](#Results-for-Crime-Prediction).**
+**2021/12/17 We release a model pruning toolkit - TextPruner, check https://github.com/airaria/TextPruner**
+More resources by HFL: https://github.com/ymcui/HFL-Anthology
+
+Dec 13, 2020 We release Chinese legal ELECTRA series, check [Download](#Download), [Results for Crime Prediction](#Results-for-Crime-Prediction).
 
 Oct 22, 2020 ELECTRA-180g released, which were trained with high-quality CommonCrawl data, check [Download](#Download).
 
