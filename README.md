@@ -86,29 +86,29 @@
 
 #### 大语料版（新版，180G数据）
 
-| 模型简称 | Google下载 | 讯飞云下载 | 压缩包大小 |
+| 模型简称 | Google下载 | 百度网盘下载 | 压缩包大小 |
 | :------- | :---------: | :---------: | :---------: |
-| **`ELECTRA-180g-large, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1P9yAuW0-HR7WvZ2r2weTnx3slo6f5u9q/view?usp=sharing) | [TensorFlow（密码Yfcy）](http://pan.iflytek.com:80/link/7605874F5A11CD693C60EAB79005CCF3) | 1G |
-| **`ELECTRA-180g-base, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1RlmfBgyEwKVBFagafYvJgyCGuj7cTHfh/view?usp=sharing) | [TensorFlow（密码Xcvm）](http://pan.iflytek.com:80/link/38E14C9BDBE8E93F09DFE2198E308489) | 383M |
-| **`ELECTRA-180g-small-ex, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1NYJTKH1dWzrIBi86VSUK-Ml9Dsso_kuf/view?usp=sharing) | [TensorFlow（密码GUdp）](http://pan.iflytek.com:80/link/3EFCF909FC5CFEA6F0EA7AA774C64CF0) | 92M |
-| **`ELECTRA-180g-small, Chinese`** | [TensorFlow](https://drive.google.com/file/d/177EVNTQpH2BRW-35-0LNLjV86MuDnEmu/view?usp=sharing) | [TensorFlow（密码qsHj）](http://pan.iflytek.com:80/link/D1B8FE678FA5BC31AA43BD99AD09913E) | 46M |
+| **`ELECTRA-180g-large, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1P9yAuW0-HR7WvZ2r2weTnx3slo6f5u9q/view?usp=sharing) | [TensorFlow（密码2v5r）](https://pan.baidu.com/s/13UJIG2G0lASjjCvPmh13RQ?pwd=2v5r) | 1G |
+| **`ELECTRA-180g-base, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1RlmfBgyEwKVBFagafYvJgyCGuj7cTHfh/view?usp=sharing) | [TensorFlow（密码3vg1）](https://pan.baidu.com/s/15PQdeh7nRxCgXp9YmjqgsQ?pwd=3vg1) | 383M |
+| **`ELECTRA-180g-small-ex, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1NYJTKH1dWzrIBi86VSUK-Ml9Dsso_kuf/view?usp=sharing) | [TensorFlow（密码93n8）](https://pan.baidu.com/s/1UV83d2LNp5HHwK7X14HjPQ?pwd=93n8) | 92M |
+| **`ELECTRA-180g-small, Chinese`** | [TensorFlow](https://drive.google.com/file/d/177EVNTQpH2BRW-35-0LNLjV86MuDnEmu/view?usp=sharing) | [TensorFlow（密码k9iu）](https://pan.baidu.com/s/1J5DXcehcNtX0iBXNRKLWBw?pwd=k9iu) | 46M |
 
 #### 基础版（原版，20G数据）
 
-| 模型简称 | Google下载 | 讯飞云下载 | 压缩包大小 |
+| 模型简称 | Google下载 | 百度网盘下载 | 压缩包大小 |
 | :------- | :---------: | :---------: | :---------: |
-| **`ELECTRA-large, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1ny0NMLkEWG6rseDLiF_NujdHxDcIN51m/view?usp=sharing) | （待补充） | 1G |
-| **`ELECTRA-base, Chinese`** | [TensorFlow](https://drive.google.com/open?id=1FMwrs2weFST-iAuZH3umMa6YZVeIP8wD) | [TensorFlow（密码3VQu）](https://pan.iflytek.com:443/link/43B111080BD4A2D3370423912B45491E) | 383M |
-| **`ELECTRA-small-ex, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1LluPORc7xtFmCTFR4IF17q77ip82i7__/view?usp=sharing) | （待补充） | 92M |
-| **`ELECTRA-small, Chinese`** | [TensorFlow](https://drive.google.com/open?id=1uab-9T1kR9HgD2NB0Kz1JB_TdSKgJIds) | [TensorFlow（密码wm2E）](https://pan.iflytek.com:443/link/E5B4E8FE8B22A5FF03184D34CB2F1767) | 46M |
+| **`ELECTRA-large, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1ny0NMLkEWG6rseDLiF_NujdHxDcIN51m/view?usp=sharing) | [TensorFlow（密码1e14）](https://pan.baidu.com/s/1M5pSqDRbb3Vsv5r3TfviBQ?pwd=1e14) | 1G |
+| **`ELECTRA-base, Chinese`** | [TensorFlow](https://drive.google.com/open?id=1FMwrs2weFST-iAuZH3umMa6YZVeIP8wD) | [TensorFlow（密码59ij）](https://pan.baidu.com/s/1i_Jw-t74B7WdURLsHGxY5g?pwd=59ij) | 383M |
+| **`ELECTRA-small-ex, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1LluPORc7xtFmCTFR4IF17q77ip82i7__/view?usp=sharing) | [TensorFlow（密码gfb1）](https://pan.baidu.com/s/1dOLw4feMJcsgZL07V-koWA?pwd=gfb1) | 92M |
+| **`ELECTRA-small, Chinese`** | [TensorFlow](https://drive.google.com/open?id=1uab-9T1kR9HgD2NB0Kz1JB_TdSKgJIds) | [TensorFlow（密码1r4r）](https://pan.baidu.com/s/1UIosBYOHVA3bDuJrFqU0NQ?pwd=1r4r) | 46M |
 
 #### 司法领域版（new）
 
-| 模型简称 | Google下载 | 讯飞云下载 | 压缩包大小 |
+| 模型简称 | Google下载 | 百度网盘下载 | 压缩包大小 |
 | :------- | :---------: | :---------: | :---------: |
-| **`legal-ELECTRA-large, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1jPyVi_t4QmTkFy7PD-m-hG-lQ8cIETzD/view?usp=sharing) | [TensorFlow（密码7f7b）](http://pan.iflytek.com:80/#/link/CC111ED9B1D4AE7E26C69A520A6D8759) | 1G |
-| **`legal-ELECTRA-base, Chinese`** | [TensorFlow](https://drive.google.com/file/d/12ZLaoFgpqGJxSi_9KiQV-jdVN4XRGMiD/view?usp=sharing) | [TensorFlow（密码7f7b）](http://pan.iflytek.com:80/#/link/CC111ED9B1D4AE7E26C69A520A6D8759) | 383M |
-| **`legal-ELECTRA-small, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1arQ5qNTNoc1OyMH8wBUKdTMy2QponIFY/view?usp=sharing) | [TensorFlow（密码7f7b）](http://pan.iflytek.com:80/#/link/CC111ED9B1D4AE7E26C69A520A6D8759) | 46M |
+| **`legal-ELECTRA-large, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1jPyVi_t4QmTkFy7PD-m-hG-lQ8cIETzD/view?usp=sharing) | [TensorFlow（密码q4gv）](https://pan.baidu.com/s/180cloQ0A3m3VqpLPeKpPYg?pwd=q4gv) | 1G |
+| **`legal-ELECTRA-base, Chinese`** | [TensorFlow](https://drive.google.com/file/d/12ZLaoFgpqGJxSi_9KiQV-jdVN4XRGMiD/view?usp=sharing) | [TensorFlow（密码8gcv）](https://pan.baidu.com/s/1OWwSsr-jCWq3vb7Js4B2vg?pwd=8gcv) | 383M |
+| **`legal-ELECTRA-small, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1arQ5qNTNoc1OyMH8wBUKdTMy2QponIFY/view?usp=sharing) | [TensorFlow（密码3xhg）](https://pan.baidu.com/s/1KsPVjsL89mqLlBZqAqKNGg?pwd=3xhg) | 46M |
 
 
 ### PyTorch/TF2版本
@@ -129,7 +129,7 @@ python transformers/src/transformers/convert_electra_original_tf_checkpoint_to_p
 
 ### 使用须知
 
-中国大陆境内建议使用讯飞云下载点，境外用户建议使用谷歌下载点。 
+中国大陆境内建议使用百度网盘下载点，境外用户建议使用谷歌下载点。 
 以TensorFlow版`ELECTRA-small, Chinese`为例，下载完毕后对zip文件进行解压得到如下文件。
 
 ```
