@@ -86,7 +86,7 @@ We provide TensorFlow models at the moment.
 | Model | Google Drive | Baidu Disk | Size |
 | :------- | :---------: | :---------: | :---------: |
 | **`ELECTRA-large, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1ny0NMLkEWG6rseDLiF_NujdHxDcIN51m/view?usp=sharing) | [TensorFlow（pw:1e14）](https://pan.baidu.com/s/1M5pSqDRbb3Vsv5r3TfviBQ?pwd=1e14) | 1G |
-| **`ELECTRA-base, Chinese`** | [TensorFlow](https://drive.google.com/open?id=1FMwrs2weFST-iAuZH3umMa6YZVeIP8wD) | [TensorFlow（pw:59ij）](https://pan.baidu.com/s/1i_Jw-t74B7WdURLsHGxY5g?pwd=59ij) | 383M |
+| **`ELECTRA-base, Chinese`** | [TensorFlow](https://drive.google.com/open?id=1FMwrs2weFST-iAuZH3umMa6YZVeIP8wD) | [TensorFlow（pw:f32j）](https://pan.baidu.com/s/1HOzCBNaoIEULj_s-q3dDzA?pwd=f32j) | 383M |
 | **`ELECTRA-small-ex, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1LluPORc7xtFmCTFR4IF17q77ip82i7__/view?usp=sharing) | [TensorFlow（pw:gfb1）](https://pan.baidu.com/s/1dOLw4feMJcsgZL07V-koWA?pwd=gfb1) | 92M |
 | **`ELECTRA-small, Chinese`** | [TensorFlow](https://drive.google.com/open?id=1uab-9T1kR9HgD2NB0Kz1JB_TdSKgJIds) | [TensorFlow（pw:1r4r）](https://pan.baidu.com/s/1UIosBYOHVA3bDuJrFqU0NQ?pwd=1r4r) | 46M |
 
@@ -96,7 +96,7 @@ We provide TensorFlow models at the moment.
 | :------- | :---------: | :---------: | :---------: |
 | **`legal-ELECTRA-large, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1jPyVi_t4QmTkFy7PD-m-hG-lQ8cIETzD/view?usp=sharing) | [TensorFlow（pw:q4gv）](https://pan.baidu.com/s/180cloQ0A3m3VqpLPeKpPYg?pwd=q4gv) | 1G |
 | **`legal-ELECTRA-base, Chinese`** | [TensorFlow](https://drive.google.com/file/d/12ZLaoFgpqGJxSi_9KiQV-jdVN4XRGMiD/view?usp=sharing) | [TensorFlow（pw:8gcv）](https://pan.baidu.com/s/1OWwSsr-jCWq3vb7Js4B2vg?pwd=8gcv) | 383M |
-| **`legal-ELECTRA-small, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1arQ5qNTNoc1OyMH8wBUKdTMy2QponIFY/view?usp=sharing) | [TensorFlow（pw:3xhg）](https://pan.baidu.com/s/1KsPVjsL89mqLlBZqAqKNGg?pwd=3xhg) | 46M |
+| **`legal-ELECTRA-small, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1arQ5qNTNoc1OyMH8wBUKdTMy2QponIFY/view?usp=sharing) | [TensorFlow（pw:kmrj）](https://pan.baidu.com/s/1FIblX4EU23KSQWft3DWL0g?pwd=kmrj) | 46M |
 
 
 ### PyTorch Version
