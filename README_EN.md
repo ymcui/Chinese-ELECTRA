@@ -7,20 +7,16 @@ ELECTRA-small could reach similar or even higher scores on several NLP tasks wit
 
 This project is based on the official code of ELECTRA: [https://github.com/google-research/electra](https://github.com/google-research/electra)
 
-You may also interested in,
+----
 
-- Chinese MacBERT：https://github.com/ymcui/MacBERT
-- Chinese BERT-wwm: https://github.com/ymcui/Chinese-BERT-wwm
-- Chinese XLNet: https://github.com/ymcui/Chinese-XLNet
-- Knowledge Distillation Toolkit - TextBrewer: https://github.com/airaria/TextBrewer
-- Model Pruning Toolkit - TextPruner: https://github.com/airaria/TextPruner
+[Chinese MacBERT](https://github.com/ymcui/MacBERT) | [Chinese ELECTRA](https://github.com/ymcui/Chinese-ELECTRA) | [Chinese XLNet](https://github.com/ymcui/Chinese-XLNet) | [Chinese BERT](https://github.com/ymcui/Chinese-BERT-wwm) | [TextBrewer](https://github.com/airaria/TextBrewer) | [TextPruner](https://github.com/airaria/TextPruner)
 
 More resources by HFL: https://github.com/ymcui/HFL-Anthology
-
 
 ## News
-**2021/12/17 We release a model pruning toolkit - TextPruner, check https://github.com/airaria/TextPruner**
-More resources by HFL: https://github.com/ymcui/HFL-Anthology
+**2022/3/30 We release a new pre-trained model called PERT, check https://github.com/ymcui/PERT **
+
+2021/12/17 We release a model pruning toolkit - TextPruner, check https://github.com/airaria/TextPruner
 
 Dec 13, 2020 We release Chinese legal ELECTRA series, check [Download](#Download), [Results for Crime Prediction](#Results-for-Crime-Prediction).
 
@@ -28,6 +24,8 @@ Oct 22, 2020 ELECTRA-180g released, which were trained with high-quality CommonC
 
 Sep 15, 2020 Our paper ["Revisiting Pre-Trained Models for Chinese Natural Language Processing"](https://arxiv.org/abs/2004.13922) is accepted to [Findings of EMNLP](https://2020.emnlp.org) as a long paper.
 
+<details>
+<summary>Past News</summary>
 August 27, 2020 We are happy to announce that our model is on top of GLUE benchmark, check [leaderboard](https://gluebenchmark.com/leaderboard).
 
 May 29, 2020 We have released Chinese ELECTRA-large/small-ex models, check [Download](#Download). We are sorry that only Google Drive links are available at present.
@@ -37,7 +35,7 @@ April 7, 2020 PyTorch models are available through [🤗Transformers](https://gi
 March 31, 2020  The models in this repository now can be easily accessed through [PaddleHub](https://github.com/PaddlePaddle/PaddleHub), check [Quick Load](#Quick-Load)
 
 March 25, 2020  We have released Chinese ELECTRA-small/base models, check [Download](#Download).
-
+</details>
 
 ## Guide
 | Section | Description |

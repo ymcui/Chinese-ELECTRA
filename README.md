@@ -16,18 +16,16 @@
 
 本项目基于谷歌&斯坦福大学官方的ELECTRA：[https://github.com/google-research/electra](https://github.com/google-research/electra)
 
-其他相关资源：
+----
 
-- 中文MacBERT预训练模型：https://github.com/ymcui/MacBERT
-- 中文BERT-wwm预训练模型：https://github.com/ymcui/Chinese-BERT-wwm
-- 中文XLNet预训练模型：https://github.com/ymcui/Chinese-XLNet
-- 知识蒸馏工具TextBrewer：https://github.com/airaria/TextBrewer
-- 模型裁剪工具TextPruner：https://github.com/airaria/TextPruner
+[中文MacBERT](https://github.com/ymcui/MacBERT) | [中文ELECTRA](https://github.com/ymcui/Chinese-ELECTRA) | [中文XLNet](https://github.com/ymcui/Chinese-XLNet) | [知识蒸馏工具TextBrewer](https://github.com/airaria/TextBrewer) | [模型裁剪工具TextPruner](https://github.com/airaria/TextPruner)
 
 查看更多哈工大讯飞联合实验室（HFL）发布的资源：https://github.com/ymcui/HFL-Anthology
 
 ## 新闻
-**2021/12/17 哈工大讯飞联合实验室推出模型裁剪工具包TextPruner。查看：https://github.com/airaria/TextPruner**
+**2022/3/30 我们开源了一种新预训练模型PERT。查看：https://github.com/ymcui/PERT**
+
+2021/12/17 哈工大讯飞联合实验室推出模型裁剪工具包TextPruner。查看：https://github.com/airaria/TextPruner
 
 2021/10/24 哈工大讯飞联合实验室发布面向少数民族语言的预训练模型CINO。查看：https://github.com/ymcui/Chinese-Minority-PLM
 
@@ -35,14 +33,14 @@
 
 2020/12/13 基于大规模法律文书数据，我们训练了面向司法领域的中文ELECTRA系列模型，查看[模型下载](#模型下载)，[司法任务效果](#司法任务效果)。
 
+<details>
+<summary>点击这里查看历史新闻</summary>
 2020/10/22 ELECTRA-180g已发布，增加了CommonCrawl的高质量数据，查看[模型下载](#模型下载)。
 
 2020/9/15 我们的论文["Revisiting Pre-Trained Models for Chinese Natural Language Processing"](https://arxiv.org/abs/2004.13922)被[Findings of EMNLP](https://2020.emnlp.org)录用为长文。
 
 2020/8/27 哈工大讯飞联合实验室在通用自然语言理解评测GLUE中荣登榜首，查看[GLUE榜单](https://gluebenchmark.com/leaderboard)，[新闻](http://dwz.date/ckrD)。
 
-<details>
-<summary>点击这里查看历史新闻</summary>
 2020/5/29 Chinese ELECTRA-large/small-ex已发布，请查看[模型下载](#模型下载)，目前只提供Google Drive下载地址，敬请谅解。
 
 2020/4/7 PyTorch用户可通过[🤗Transformers](https://github.com/huggingface/transformers)加载模型，查看[快速加载](#快速加载)。
