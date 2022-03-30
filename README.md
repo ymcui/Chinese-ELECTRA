@@ -436,7 +436,7 @@ A: 敬请关注。
  }
 ```
 
-- 或者：https://arxiv.org/abs/2004.13922
+- 或者：https://www.aclweb.org/anthology/2020.findings-emnlp.58
 ```
 @inproceedings{cui-etal-2020-revisiting,
     title = "Revisiting Pre-Trained Models for {C}hinese Natural Language Processing",

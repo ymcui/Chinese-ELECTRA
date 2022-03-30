@@ -413,7 +413,7 @@ If you find the technical report or resource is useful, please cite our work in 
   doi={10.1109/TASLP.2021.3124365},
  }
 ```
-- Secondary: https://arxiv.org/abs/2004.13922  
+- Secondary: https://www.aclweb.org/anthology/2020.findings-emnlp.58
 ```
 @inproceedings{cui-etal-2020-revisiting,
     title = "Revisiting Pre-Trained Models for {C}hinese Natural Language Processing",
