@@ -76,46 +76,29 @@ We provide TensorFlow models at the moment.
 
 #### New Version (180G data)
 
-| Model | Google Drive | Baidu Disk | Size |
+| Model | 🤗HF | Baidu Disk | Size |
 | :------- | :---------: | :---------: | :---------: |
-| **`ELECTRA-180g-large, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1P9yAuW0-HR7WvZ2r2weTnx3slo6f5u9q/view?usp=sharing) | [TensorFlow（pw:2v5r）](https://pan.baidu.com/s/13UJIG2G0lASjjCvPmh13RQ?pwd=2v5r) | 1G |
-| **`ELECTRA-180g-base, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1RlmfBgyEwKVBFagafYvJgyCGuj7cTHfh/view?usp=sharing) | [TensorFlow（pw:3vg1）](https://pan.baidu.com/s/15PQdeh7nRxCgXp9YmjqgsQ?pwd=3vg1) | 383M |
-| **`ELECTRA-180g-small-ex, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1NYJTKH1dWzrIBi86VSUK-Ml9Dsso_kuf/view?usp=sharing) | [TensorFlow（pw:93n8）](https://pan.baidu.com/s/1UV83d2LNp5HHwK7X14HjPQ?pwd=93n8) | 92M |
-| **`ELECTRA-180g-small, Chinese`** | [TensorFlow](https://drive.google.com/file/d/177EVNTQpH2BRW-35-0LNLjV86MuDnEmu/view?usp=sharing) | [TensorFlow（pw:k9iu）](https://pan.baidu.com/s/1J5DXcehcNtX0iBXNRKLWBw?pwd=k9iu) | 46M |
+| **`ELECTRA-180g-large, Chinese`** | [HF link](https://huggingface.co/hfl/chinese-electra-180g-large-discriminator) | [TensorFlow（pw:2v5r）](https://pan.baidu.com/s/13UJIG2G0lASjjCvPmh13RQ?pwd=2v5r) | 1G |
+| **`ELECTRA-180g-base, Chinese`** | [HF link](https://huggingface.co/hfl/chinese-electra-180g-base-discriminator) | [TensorFlow（pw:3vg1）](https://pan.baidu.com/s/15PQdeh7nRxCgXp9YmjqgsQ?pwd=3vg1) | 383M |
+| **`ELECTRA-180g-small-ex, Chinese`** | [HF link](https://huggingface.co/hfl/chinese-electra-180g-small-ex-discriminator) | [TensorFlow（pw:93n8）](https://pan.baidu.com/s/1UV83d2LNp5HHwK7X14HjPQ?pwd=93n8) | 92M |
+| **`ELECTRA-180g-small, Chinese`** | [HF link](https://huggingface.co/hfl/chinese-electra-180g-small-discriminator) | [TensorFlow（pw:k9iu）](https://pan.baidu.com/s/1J5DXcehcNtX0iBXNRKLWBw?pwd=k9iu) | 46M |
 
 #### Basic Version (20G data)
 
-| Model | Google Drive | Baidu Disk | Size |
+| Model | 🤗HF | Baidu Disk | Size |
 | :------- | :---------: | :---------: | :---------: |
-| **`ELECTRA-large, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1ny0NMLkEWG6rseDLiF_NujdHxDcIN51m/view?usp=sharing) | [TensorFlow（pw:1e14）](https://pan.baidu.com/s/1M5pSqDRbb3Vsv5r3TfviBQ?pwd=1e14) | 1G |
-| **`ELECTRA-base, Chinese`** | [TensorFlow](https://drive.google.com/open?id=1FMwrs2weFST-iAuZH3umMa6YZVeIP8wD) | [TensorFlow（pw:f32j）](https://pan.baidu.com/s/1HOzCBNaoIEULj_s-q3dDzA?pwd=f32j) | 383M |
-| **`ELECTRA-small-ex, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1LluPORc7xtFmCTFR4IF17q77ip82i7__/view?usp=sharing) | [TensorFlow（pw:gfb1）](https://pan.baidu.com/s/1dOLw4feMJcsgZL07V-koWA?pwd=gfb1) | 92M |
-| **`ELECTRA-small, Chinese`** | [TensorFlow](https://drive.google.com/open?id=1uab-9T1kR9HgD2NB0Kz1JB_TdSKgJIds) | [TensorFlow（pw:1r4r）](https://pan.baidu.com/s/1UIosBYOHVA3bDuJrFqU0NQ?pwd=1r4r) | 46M |
+| **`ELECTRA-large, Chinese`** | [HF link](https://huggingface.co/hfl/chinese-electra-large-discriminator) | [TensorFlow（pw:1e14）](https://pan.baidu.com/s/1M5pSqDRbb3Vsv5r3TfviBQ?pwd=1e14) | 1G |
+| **`ELECTRA-base, Chinese`** | [HF link](https://huggingface.co/hfl/chinese-electra-base-discriminator) | [TensorFlow（pw:f32j）](https://pan.baidu.com/s/1HOzCBNaoIEULj_s-q3dDzA?pwd=f32j) | 383M |
+| **`ELECTRA-small-ex, Chinese`** | [HF link](https://huggingface.co/hfl/chinese-electra-small-ex-discriminator) | [TensorFlow（pw:gfb1）](https://pan.baidu.com/s/1dOLw4feMJcsgZL07V-koWA?pwd=gfb1) | 92M |
+| **`ELECTRA-small, Chinese`** | [HF link](https://huggingface.co/hfl/chinese-electra-small-discriminator) | [TensorFlow（pw:1r4r）](https://pan.baidu.com/s/1UIosBYOHVA3bDuJrFqU0NQ?pwd=1r4r) | 46M |
 
-#### Legal Version (new)
+#### Legal Version
 
-| Model | Google Drive | Baidu Disk | Size |
+| Model | 🤗HF | Baidu Disk | Size |
 | :------- | :---------: | :---------: | :---------: |
-| **`legal-ELECTRA-large, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1jPyVi_t4QmTkFy7PD-m-hG-lQ8cIETzD/view?usp=sharing) | [TensorFlow（pw:q4gv）](https://pan.baidu.com/s/180cloQ0A3m3VqpLPeKpPYg?pwd=q4gv) | 1G |
-| **`legal-ELECTRA-base, Chinese`** | [TensorFlow](https://drive.google.com/file/d/12ZLaoFgpqGJxSi_9KiQV-jdVN4XRGMiD/view?usp=sharing) | [TensorFlow（pw:8gcv）](https://pan.baidu.com/s/1OWwSsr-jCWq3vb7Js4B2vg?pwd=8gcv) | 383M |
-| **`legal-ELECTRA-small, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1arQ5qNTNoc1OyMH8wBUKdTMy2QponIFY/view?usp=sharing) | [TensorFlow（pw:kmrj）](https://pan.baidu.com/s/1FIblX4EU23KSQWft3DWL0g?pwd=kmrj) | 46M |
-
-
-### PyTorch Version
-If you need these models in PyTorch,
-
-1) Convert TensorFlow checkpoint into PyTorch, using [🤗Transformers](https://github.com/huggingface/transformers). Please use the script [convert_electra_original_tf_checkpoint_to_pytorch.py](https://github.com/huggingface/transformers/blob/master/src/transformers/convert_electra_original_tf_checkpoint_to_pytorch.py) provided by 🤗Transformers. For example,
-```bash
-python transformers/src/transformers/convert_electra_original_tf_checkpoint_to_pytorch.py \
---tf_checkpoint_path ./path-to-large-model/ \
---config_file ./path-to-large-model/discriminator.json \
---pytorch_dump_path ./path-to-output/model.bin \
---discriminator_or_generator discriminator
-```
-
-2) Download from https://huggingface.co/hfl
-
-Steps: select one of the model in the page above → click "list all files in model" at the end of the model page → download bin/json files from the pop-up window
+| **`legal-ELECTRA-large, Chinese`** | [HF link](https://huggingface.co/hfl/chinese-legal-electra-large-discriminator) | [TensorFlow（pw:q4gv）](https://pan.baidu.com/s/180cloQ0A3m3VqpLPeKpPYg?pwd=q4gv) | 1G |
+| **`legal-ELECTRA-base, Chinese`** | [HF link](https://huggingface.co/hfl/chinese-legal-electra-base-discriminator) | [TensorFlow（pw:8gcv）](https://pan.baidu.com/s/1OWwSsr-jCWq3vb7Js4B2vg?pwd=8gcv) | 383M |
+| **`legal-ELECTRA-small, Chinese`** | [HF link](https://huggingface.co/hfl/chinese-legal-electra-small-discriminator) | [TensorFlow（pw:kmrj）](https://pan.baidu.com/s/1FIblX4EU23KSQWft3DWL0g?pwd=kmrj) | 46M |
 
 ### Note
 The users from Mainland China are encouraged to use iFLYTEK Cloud download links, and the others may use Google Drive links.

@@ -79,8 +79,6 @@
 
 
 ## 模型下载
-本目录中包含以下模型，目前仅提供TensorFlow版本权重。
-
 * **`ELECTRA-large, Chinese`**: 24-layer, 1024-hidden, 16-heads, 324M parameters   
 * **`ELECTRA-base, Chinese`**: 12-layer, 768-hidden, 12-heads, 102M parameters   
 * **`ELECTRA-small-ex, Chinese`**: 24-layer, 256-hidden, 4-heads, 25M parameters
@@ -88,46 +86,29 @@
 
 #### 大语料版（新版，180G数据）
 
-| 模型简称 | Google下载 | 百度网盘下载 | 压缩包大小 |
+| 模型简称 | 🤗HF下载 | 百度网盘下载 | 压缩包大小 |
 | :------- | :---------: | :---------: | :---------: |
-| **`ELECTRA-180g-large, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1P9yAuW0-HR7WvZ2r2weTnx3slo6f5u9q/view?usp=sharing) | [TensorFlow（密码2v5r）](https://pan.baidu.com/s/13UJIG2G0lASjjCvPmh13RQ?pwd=2v5r) | 1G |
-| **`ELECTRA-180g-base, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1RlmfBgyEwKVBFagafYvJgyCGuj7cTHfh/view?usp=sharing) | [TensorFlow（密码3vg1）](https://pan.baidu.com/s/15PQdeh7nRxCgXp9YmjqgsQ?pwd=3vg1) | 383M |
-| **`ELECTRA-180g-small-ex, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1NYJTKH1dWzrIBi86VSUK-Ml9Dsso_kuf/view?usp=sharing) | [TensorFlow（密码93n8）](https://pan.baidu.com/s/1UV83d2LNp5HHwK7X14HjPQ?pwd=93n8) | 92M |
-| **`ELECTRA-180g-small, Chinese`** | [TensorFlow](https://drive.google.com/file/d/177EVNTQpH2BRW-35-0LNLjV86MuDnEmu/view?usp=sharing) | [TensorFlow（密码k9iu）](https://pan.baidu.com/s/1J5DXcehcNtX0iBXNRKLWBw?pwd=k9iu) | 46M |
+| **`ELECTRA-180g-large, Chinese`** | [HF link](https://huggingface.co/hfl/chinese-electra-180g-large-discriminator) | [TensorFlow（密码2v5r）](https://pan.baidu.com/s/13UJIG2G0lASjjCvPmh13RQ?pwd=2v5r) | 1G |
+| **`ELECTRA-180g-base, Chinese`** | [HF link](https://huggingface.co/hfl/chinese-electra-180g-base-discriminator) | [TensorFlow（密码3vg1）](https://pan.baidu.com/s/15PQdeh7nRxCgXp9YmjqgsQ?pwd=3vg1) | 383M |
+| **`ELECTRA-180g-small-ex, Chinese`** | [HF link](https://huggingface.co/hfl/chinese-electra-180g-small-ex-discriminator) | [TensorFlow（密码93n8）](https://pan.baidu.com/s/1UV83d2LNp5HHwK7X14HjPQ?pwd=93n8) | 92M |
+| **`ELECTRA-180g-small, Chinese`** | [HF link](https://huggingface.co/hfl/chinese-electra-180g-small-discriminator) | [TensorFlow（密码k9iu）](https://pan.baidu.com/s/1J5DXcehcNtX0iBXNRKLWBw?pwd=k9iu) | 46M |
 
 #### 基础版（原版，20G数据）
 
-| 模型简称 | Google下载 | 百度网盘下载 | 压缩包大小 |
+| 模型简称 | 🤗HF下载 | 百度网盘下载 | 压缩包大小 |
 | :------- | :---------: | :---------: | :---------: |
-| **`ELECTRA-large, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1ny0NMLkEWG6rseDLiF_NujdHxDcIN51m/view?usp=sharing) | [TensorFlow（密码1e14）](https://pan.baidu.com/s/1M5pSqDRbb3Vsv5r3TfviBQ?pwd=1e14) | 1G |
-| **`ELECTRA-base, Chinese`** | [TensorFlow](https://drive.google.com/open?id=1FMwrs2weFST-iAuZH3umMa6YZVeIP8wD) | [TensorFlow（密码f32j）](https://pan.baidu.com/s/1HOzCBNaoIEULj_s-q3dDzA?pwd=f32j) | 383M |
-| **`ELECTRA-small-ex, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1LluPORc7xtFmCTFR4IF17q77ip82i7__/view?usp=sharing) | [TensorFlow（密码gfb1）](https://pan.baidu.com/s/1dOLw4feMJcsgZL07V-koWA?pwd=gfb1) | 92M |
-| **`ELECTRA-small, Chinese`** | [TensorFlow](https://drive.google.com/open?id=1uab-9T1kR9HgD2NB0Kz1JB_TdSKgJIds) | [TensorFlow（密码1r4r）](https://pan.baidu.com/s/1UIosBYOHVA3bDuJrFqU0NQ?pwd=1r4r) | 46M |
+| **`ELECTRA-large, Chinese`** | [HF link](https://huggingface.co/hfl/chinese-electra-large-discriminator) | [TensorFlow（密码1e14）](https://pan.baidu.com/s/1M5pSqDRbb3Vsv5r3TfviBQ?pwd=1e14) | 1G |
+| **`ELECTRA-base, Chinese`** | [HF link](https://huggingface.co/hfl/chinese-electra-base-discriminator) | [TensorFlow（密码f32j）](https://pan.baidu.com/s/1HOzCBNaoIEULj_s-q3dDzA?pwd=f32j) | 383M |
+| **`ELECTRA-small-ex, Chinese`** | [HF link](https://huggingface.co/hfl/chinese-electra-small-ex-discriminator) | [TensorFlow（密码gfb1）](https://pan.baidu.com/s/1dOLw4feMJcsgZL07V-koWA?pwd=gfb1) | 92M |
+| **`ELECTRA-small, Chinese`** | [HF link](https://huggingface.co/hfl/chinese-electra-small-discriminator) | [TensorFlow（密码1r4r）](https://pan.baidu.com/s/1UIosBYOHVA3bDuJrFqU0NQ?pwd=1r4r) | 46M |
 
-#### 司法领域版（new）
+#### 司法领域版
 
-| 模型简称 | Google下载 | 百度网盘下载 | 压缩包大小 |
+| 模型简称 | 🤗HF下载 | 百度网盘下载 | 压缩包大小 |
 | :------- | :---------: | :---------: | :---------: |
-| **`legal-ELECTRA-large, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1jPyVi_t4QmTkFy7PD-m-hG-lQ8cIETzD/view?usp=sharing) | [TensorFlow（密码q4gv）](https://pan.baidu.com/s/180cloQ0A3m3VqpLPeKpPYg?pwd=q4gv) | 1G |
-| **`legal-ELECTRA-base, Chinese`** | [TensorFlow](https://drive.google.com/file/d/12ZLaoFgpqGJxSi_9KiQV-jdVN4XRGMiD/view?usp=sharing) | [TensorFlow（密码8gcv）](https://pan.baidu.com/s/1OWwSsr-jCWq3vb7Js4B2vg?pwd=8gcv) | 383M |
-| **`legal-ELECTRA-small, Chinese`** | [TensorFlow](https://drive.google.com/file/d/1arQ5qNTNoc1OyMH8wBUKdTMy2QponIFY/view?usp=sharing) | [TensorFlow（密码kmrj）](https://pan.baidu.com/s/1FIblX4EU23KSQWft3DWL0g?pwd=kmrj) | 46M |
-
-
-### PyTorch/TF2版本
-
-如需PyTorch版本，请自行通过🤗Transformers提供的转换脚本[convert_electra_original_tf_checkpoint_to_pytorch.py](https://github.com/huggingface/transformers/blob/master/src/transformers/convert_electra_original_tf_checkpoint_to_pytorch.py)进行转换。如需配置文件可进入到本目录下的config文件夹中查找。
-
-```bash
-python transformers/src/transformers/convert_electra_original_tf_checkpoint_to_pytorch.py \
---tf_checkpoint_path ./path-to-large-model/ \
---config_file ./path-to-large-model/discriminator.json \
---pytorch_dump_path ./path-to-output/model.bin \
---discriminator_or_generator discriminator
-```
-
-或者通过huggingface官网直接下载PyTorch版权重：https://huggingface.co/hfl
-
-方法：点击任意需要下载的model → 拉到最下方点击"List all files in model" → 在弹出的小框中下载bin和json文件。
+| **`legal-ELECTRA-large, Chinese`** | [HF link](https://huggingface.co/hfl/chinese-legal-electra-large-discriminator) | [TensorFlow（密码q4gv）](https://pan.baidu.com/s/180cloQ0A3m3VqpLPeKpPYg?pwd=q4gv) | 1G |
+| **`legal-ELECTRA-base, Chinese`** | [HF link](https://huggingface.co/hfl/chinese-legal-electra-base-discriminator) | [TensorFlow（密码8gcv）](https://pan.baidu.com/s/1OWwSsr-jCWq3vb7Js4B2vg?pwd=8gcv) | 383M |
+| **`legal-ELECTRA-small, Chinese`** | [HF link](https://huggingface.co/hfl/chinese-legal-electra-small-discriminator) | [TensorFlow（密码kmrj）](https://pan.baidu.com/s/1FIblX4EU23KSQWft3DWL0g?pwd=kmrj) | 46M |
 
 ### 使用须知
 
