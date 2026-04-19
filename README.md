@@ -443,9 +443,9 @@ A: 敬请关注。
 
 
 ## 关注我们
-欢迎关注**哈工大讯飞联合实验室**官方微信公众号，了解最新的技术动态。
+欢迎关注微信公众号"**涌现志**"，了解最新的技术动态。
 
-![qrcode.png](./pics/qrcode.jpg)
+![qrcode.png](https://ymcui.com/images/qrcode.jpg)
 
 
 ## 问题反馈
